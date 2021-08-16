@@ -81,6 +81,8 @@ public class FrontController extends HttpServlet {
 		map.put("/reservationUpdate.do", null);
 		map.put("/reservationDelete.do", null);
 		
+		// 예약
+		map.put("/reservationSelectForm.do", new ReservationSelectForm());
 		
 	}
 
@@ -89,6 +91,7 @@ public class FrontController extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO 감자감자 대홍단감자~!!!!!! 한소라!!!!체랴!!!!ㅠ_ㅠ!
+
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		
