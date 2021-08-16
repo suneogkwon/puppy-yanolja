@@ -32,9 +32,9 @@ public class FrontController extends HttpServlet {
 		map.put("/home.do", new HomeCmd());
 		
 		// 회원관련
-		map.put("/login.do", new LoginCmd());
-		map.put("/loginForm.do", new LoginFormCmd());
-		map.put("/logout.do", new LogoutCmd());
+		map.put("/login.do", null);
+		map.put("/loginForm.do", null);
+		map.put("/logout.do", null);
 		map.put("/memberSignUpForm.do", null);
 		map.put("/memberSignUp.do", null);
 		map.put("/memberSignOutForm.do", null);
@@ -83,6 +83,8 @@ public class FrontController extends HttpServlet {
 		map.put("/reservationUpdate.do", null);
 		map.put("/reservationDelete.do", null);
 		
+		// 예약
+		
 		
 	}
 
@@ -91,6 +93,10 @@ public class FrontController extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO 감자감자 대홍단감자~!!!!!! 한소라!!!!체랴!!!!ㅠ_ㅠ!
+		
+		
+		
+		
 	}
 
 }
