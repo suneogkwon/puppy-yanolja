@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:forward page="home.do"/>
+ 바디입니다.
 </body>
 </html>
