@@ -82,7 +82,7 @@ public class FrontController extends HttpServlet {
 		map.put("/reservationDelete.do", null);
 		
 		// 예약
-		
+		map.put("/reservationSelectForm.do", new ReservationSelectForm());
 		
 	}
 
