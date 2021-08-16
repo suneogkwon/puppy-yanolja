@@ -6,14 +6,12 @@ import java.util.HashMap;
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import co.yedam.puppy.common.Command;
 
-@WebServlet("*.do")
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private HashMap<String, Command> map = new HashMap<String, Command>();
@@ -93,10 +91,27 @@ public class FrontController extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO 감자감자 대홍단감자~!!!!!! 한소라!!!!체랴!!!!ㅠ_ㅠ!
+
+		request.setCharacterEncoding("utf-8");
+		response.setCharacterEncoding("utf-8");
 		
+		String uri = request.getRequestURI();
+		String context = request.getContextPath();
+		String path = uri.replace(context, "");
 		
+		Command command = map.get(path);
 		
+		String view = command.execute(request, response);
 		
+		if(view.startsWith("ajax:")) {	// ajax 데이터 처리
+			String data = view.replace("ajax:", "");
+			response.getWriter().print(data);
+		} else if(view.endsWith(".do")) {
+			request.getRequestDispatcher(view).forward(request, response);
+		} else {	
+			view = view + ".tiles";
+			request.getRequestDispatcher(view).forward(request, response);
+		}
 	}
 
 }

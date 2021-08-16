@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<jsp:forward page="home.do"/>
+ 바디입니다.
 </body>
 </html>
