@@ -83,6 +83,7 @@ public class FrontController extends HttpServlet {
 		
 		// 예약
 		map.put("/reservationSelectForm.do", new ReservationSelectForm());
+		map.put("/reservationSelectDetail.do", new ReservationSelectDetail());
 		
 	}
 
