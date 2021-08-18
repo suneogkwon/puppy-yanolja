@@ -1,10 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<style>
-a {
-	text-decoration: none;
-}
-</style>
 <br><br>
 <div class="container">
         <!-- 도시선택 -->
