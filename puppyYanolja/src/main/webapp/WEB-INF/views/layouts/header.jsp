@@ -13,7 +13,7 @@
                 </nav>
             </div>
             <div class="col-12 text-center position-relative">
-                <img id="headerLogo" class="img-fluid" src="assets/img/logo.jpg" alt="Logo" style="height:150px;">
+                <img id="headerLogo" class="img-fluid" src="assets/img/logo/logo.png" alt="Logo" style="height:150px;">
             </div>
             <div class="col-12 col-lg-8 col-xl-6">
                 <form id="searchForm" name="searchForm" action="" method="GET">
