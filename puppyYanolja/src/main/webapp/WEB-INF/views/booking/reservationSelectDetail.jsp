@@ -1,5 +1,68 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<style>
+.review_star {
+	width: 20px;
+	height: 20px;
+}
+
+.gps_img {
+	height: 20px;
+}
+
+.room_imgBox {
+	height: 250px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.room_img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.btn-primary {
+	color: #fff;
+}
+
+.carousel-item>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.review_Number {
+	font-size: 3rem;
+}
+
+.review_starTop {
+	width: 50px;
+	height: 50px;
+	clear: both;
+}
+
+.smile_icon01 {
+	height: 50px;
+}
+
+.review_id {
+	color: #d79b70;
+	font-weight: 800em;
+}
+
+.review_contents {
+	color: #7c7c7c;
+}
+
+.swiper-slide>img {
+	opacity: 0.4;
+}
+
+.swiper-slide>img:hover {
+	opacity: 1.0;
+}
+</style>
 <div class="container">
 	<!-- 호텔 이미지 사진 -->
 	<div class="row">
@@ -211,62 +274,100 @@
 	<div class="row row-cols-1 row-cols-md-4 g-4">
 		<div class="col">
 			<div class="card h-100">
-			<div>
-				<img src="assets/img/booking/room01.jpg" class="card-img-top "
-					alt="...">
-			</div>
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">This is a longer card with supporting text
-						below as a natural lead-in to additional content. This content is
-						a little bit longer.</p>
+				<div>
+					<img src="assets/img/booking/room01.jpg" class="card-img-top "
+						alt="...">
 				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card h-100"> 
-				<img src="assets/img/booking/room02.jpg" class="card-img-top"
-					alt="...">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">This is a short card.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card h-100">
-				<img src="assets/img/booking/room03.jpg" class="card-img-top"
-					alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">This is a longer card with supporting text
-						below as a natural lead-in to additional content.</p>
+					<h5 class="card-title">좋아요</h5>
+					<div class="row">
+						<div class="col-8">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+						</div>
+						<div class="col-4 text-end">5.0</div>
+					</div>
+					<p class="card-text p-2">이것은 추가 콘텐츠에 대한 자연스러운 도입으로 아래에 지원 텍스트가
+						있는 더 긴 카드입니다. 이 내용은 조금 더 깁니다.</p>
 				</div>
 			</div>
 		</div>
 		<div class="col">
 			<div class="card h-100">
-				<img src="assets/img/booking/room04.jpg"
-					class="card-img-top img-fluid" alt="...">
+				<div>
+					<img src="assets/img/booking/room01.jpg" class="card-img-top "
+						alt="...">
+				</div>
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">This is a longer card with supporting text
-						below as a natural lead-in to additional content. This content is
-						a little bit longer.</p>
+					<h5 class="card-title">좋아요</h5>
+					<div class="row">
+						<div class="col-8">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+						</div>
+						<div class="col-4 text-end">5.0</div>
+					</div>
+					<p class="card-text p-2">이것은 추가 콘텐츠에 대한 자연스러운 도입으로 아래에 지원 텍스트가
+						있는 더 긴 카드입니다. 이 내용은 조금 더 깁니다.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<div>
+					<img src="assets/img/booking/room01.jpg" class="card-img-top "
+						alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">좋아요</h5>
+					<div class="row">
+						<div class="col-8">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+						</div>
+						<div class="col-4 text-end">5.0</div>
+					</div>
+					<p class="card-text p-2">이것은 추가 콘텐츠에 대한 자연스러운 도입으로 아래에 지원 텍스트가
+						있는 더 긴 카드입니다. 이 내용은 조금 더 깁니다.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<div>
+					<img src="assets/img/booking/room01.jpg" class="card-img-top "
+						alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">좋아요</h5>
+					<div class="row">
+						<div class="col-8">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+							<img src='assets/img/booking/review_star.png' class="review_star">
+						</div>
+						<div class="col-4 text-end">5.0</div>
+					</div>
+					<p class="card-text p-2">이것은 추가 콘텐츠에 대한 자연스러운 도입으로 아래에 지원 텍스트가
+						있는 더 긴 카드입니다. 이 내용은 조금 더 깁니다.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<br>
-	<br>
-	<br>
-
-	<!-- 예약 버튼 -->
+	<br><br>
 	<div class="d-grid gap-2">
-		<button class="btn btn-primary" type="button">예약하기</button>
+ 		 <button class="btn btn-primary" type="button">예약하기</button>
 	</div>
-
-
-
-	<br> <br> <br> <br> <br>
+		
 </div>
