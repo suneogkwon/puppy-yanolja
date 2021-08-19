@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import co.yedam.puppy.common.Command;
+import co.yedam.puppy.main.command.HomeCmd;
+import co.yedam.puppy.shop.command.PetShopList;
+import co.yedam.puppy.shop.command.ReservationSelectDetail;
+import co.yedam.puppy.shop.command.ReservationSelectForm;
 
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -85,6 +89,7 @@ public class FrontController extends HttpServlet {
 		map.put("/reservationSelectForm.do", new ReservationSelectForm());
 		map.put("/reservationSelectDetail.do", new ReservationSelectDetail());
 		map.put("/reservationSelect.do", new ReservationSelect());
+		map.put("/petShopList.do", new PetShopList());
 	}
 
 	/**

@@ -1,10 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<style>
-a {
-	text-decoration: none;
-}
-</style>
+<br><br>
 <div class="container">
         <!-- 도시선택 -->
         <div class="row g-2">
@@ -419,7 +415,7 @@ a {
                     <div class="row">
                        <div class="col-lg-4">
                           <div class="card">
-                             <img src="assets/img/hotel01.jpg" class="card-img-top" alt="hotel01.jpg" />
+                             <img src="assets/img/booking/hotel01.jpg" class="card-img-top" alt="hotel01.jpg" />
                              <div class="card-body">
                                 <h5 class="card-title"><b>오라카이 송도파크 호텔</b></h5>
                                 <p class="card-text">차원이 다른 아늑함! 나의 작은 가족을 위한 최상의 서비스를 최대 8월말까지~</p>
@@ -430,7 +426,7 @@ a {
      
                        <div class="col-lg-4 d-none d-lg-block">
                           <div class="card">
-                             <img src="assets/img/hotel02.jpg" class="card-img-top" alt="hotel02.jpg" />
+                             <img src="assets/img/booking/hotel02.jpg" class="card-img-top" alt="hotel02.jpg" />
                              <div class="card-body">
                                 <h5 class="card-title"><b>여수 오션뷰 레지던스 호텔</b></h5>
                                 <p class="card-text">완벽한 여름 프리미엄 호캉스! 여수 호텔퍼스트 시티를 지금 바로 만나보세요.</p>
@@ -441,7 +437,7 @@ a {
      
                        <div class="col-lg-4 d-none d-lg-block">
                           <div class="card">
-                             <img src="assets/img/hotel03.jpg" class="card-img-top" alt="..." />
+                             <img src="assets/img/booking/hotel03.jpg" class="card-img-top" alt="..." />
                              <div class="card-body">
                                 <h5 class="card-title"><b>마곡 비즈니스 호텔</b></h5>
                                 <p class="card-text">SR 호텔 서울 강서지역 최고의 프리미엄 PET 호텔로 세련되고 모던함 감각,안락한 객실이 함께합니다
@@ -460,7 +456,7 @@ a {
                     <div class="row">
                        <div class="col-lg-4 col-md-12">
                           <div class="card">
-                             <img src="assets/img/hotel04.jpg" class="card-img-top" alt="..." />
+                             <img src="assets/img/booking/hotel04.jpg" class="card-img-top" alt="..." />
                              <div class="card-body">
                                 <h5 class="card-title"><b>히든 클리프 호텔 앤 네이쳐</b></h5>
                                 <p class="card-text">여기로 데려가줘! 국내 최대 규모의 PET 수영장! 무더운 여름 시원하게~
@@ -472,7 +468,7 @@ a {
      
                        <div class="col-lg-4 d-none d-lg-block">
                           <div class="card">
-                             <img src="assets/img/hotel05.jpg" class="card-img-top" alt="..." />
+                             <img src="assets/img/booking/hotel05.jpg" class="card-img-top" alt="..." />
                              <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on
@@ -484,7 +480,7 @@ a {
      
                        <div class="col-lg-4 d-none d-lg-block">
                           <div class="card">
-                             <img src="assets/img/hotel06.jpg" class="card-img-top" alt="..." />
+                             <img src="assets/img/booking/hotel06.jpg" class="card-img-top" alt="..." />
                              <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on

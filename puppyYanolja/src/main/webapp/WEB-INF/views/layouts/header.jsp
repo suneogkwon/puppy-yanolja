@@ -1,31 +1,41 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-<script src="/assets/js/bootstrap.bundle.js"></script>
-<div class="container-fluid border-bottom shadow-sm">
+
+<div class="container-fluid border-bottom shadow-sm bg-white">
     <div class="container">
-    	<div class="row align-items-center justify-content-end">
-    		<div class="col">
-    			<nav class="nav">
-    				<a href="#" class="nav-link">Login</a>
-    				<a href="#" class="nav-link">Register</a>
-    				<a href="#" class="nav-link">My page</a>
-    			</nav>
-    		</div>
-    	</div>
         <div class="row align-items-center justify-content-center">
-            <div class="col-12 text-center position-relative">
-                <img id="headerLogo" class="img-fluid" src="assets/img/logo.jpg" alt="Logo" style="height:150px;">
+            <div class="col-12 col-md-9"> 
+                <nav class="nav justify-content-end fw-bold">
+                    <a href="login.do" class="nav-link px-2">Login</a>
+                    <a href="registerForm.do" class="nav-link px-2">Register</a>
+                    <a href="mypage.do" class="nav-link px-2">My page</a>
+                    <a href="wishlist.do" class="nav-link px-2">Wishlist</a>
+                </nav>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 text-center position-relative">
+            	<a href="home.do">
+	               <img id="headerLogo" class="img-fluid" src="assets/img/logo/logo_text.jpg" alt="Logo" style="height:150px;">
+	            </a>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-6">
                 <form id="searchForm" name="searchForm" action="" method="GET">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="호텔명을 입력해주세요." aria-describedby="button-addon2">
+                        <input type="text" class="form-control form-control-lg" placeholder="찾으시는 호텔 이름을 입력해주세요." aria-describedby="button-addon2">
                         <button class="btn btn-dark" type="button" id="button-addon2"><i class="xi-search"></i></button>
-                      </div>
+                    </div>
                 </form>
-                
+            </div>
+            <div class="w-100"></div>
+            <div class="col-12 col-lg-8 col-xl-6">
+                <nav class="row gy-3 row-cols-auto align-items-center justify-content-center text-center py-3">
+                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견호텔</span></a>
+                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견유치원</span></a>
+                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견카페</span></a>
+                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견샵</span></a>
+                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견용품샵</span></a>
+                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">산책/공원</span></a>
+                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">동물병원</span></a>
+                </nav>
             </div>
         </div>
     </div>
