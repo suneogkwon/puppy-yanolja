@@ -69,7 +69,7 @@ public class FrontController extends HttpServlet {
 		map.put("/reservationForm.do", null);
 		map.put("/reservationWriteForm.do", null);
 		map.put("/reservationWrite.do", null);
-		map.put("/payForm.do", null);
+		map.put("/payForm.do", new PayForm());
 		map.put("/orderComplete.do", null);//
 		map.put("/reviewList.do", null);
 		map.put("/reviewInsertForm.do", null);
@@ -84,7 +84,7 @@ public class FrontController extends HttpServlet {
 		// 예약
 		map.put("/reservationSelectForm.do", new ReservationSelectForm());
 		map.put("/reservationSelectDetail.do", new ReservationSelectDetail());
-		
+		map.put("/reservationSelect.do", new ReservationSelect());
 	}
 
 	/**
