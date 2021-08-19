@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
 /* 헤더 관련 */
-#headerLogo {height:150px;}
+#headerLogo {height:170px;}
+
+/* main review */
+.main-review-img {width:60px;height:60px;overflow:hidden}
+.main-review-img img {object-fit:cover}
+#reviewCarousel .review-score-bg {display:block; width:100px; height:30px; background:url(../img/review_emptystar.png) repeat-x left/20px}
+#reviewCarousel .review-score-bg .review-score {display:block; width:80%; height:30px; background:url(../img/review_star.png) repeat-x left/20px}
 
 .review_star {
 	width: 20px;

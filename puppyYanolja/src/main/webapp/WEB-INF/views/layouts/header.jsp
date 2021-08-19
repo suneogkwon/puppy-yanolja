@@ -14,7 +14,7 @@
             </div>
             <div class="col-12 text-center position-relative">
             	<a href="home.do">
-	               <img id="headerLogo" class="img-fluid" src="assets/img/logo/logo_text.jpg" alt="Logo" style="height:150px;">
+	               <img id="headerLogo" class="img-fluid" src="assets/img/logo/logo_text.jpg" alt="Logo">
 	            </a>
             </div>
             <div class="col-12 col-lg-8 col-xl-6">
