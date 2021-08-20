@@ -58,7 +58,7 @@
 			<div class="row">
 				<div class="col margin_top">
 					<div class="card" style="width: 35rem;">
-						<img src="assets/img/room01.jpg" class="card-img-top" alt="...">
+						<img src="assets/img/booking/room01.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h4 class="card-title">
 								<b>뫄뫄 호텔</b>
@@ -71,7 +71,7 @@
 				</div>
 				<div class="col">
 					<div class="card" style="width: 35rem;">
-						<img src="assets/img/room01.jpg" class="card-img-top" alt="...">
+						<img src="assets/img/booking/room01.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h4 class="card-title">
 								<b>뫄뫄 호텔</b>
@@ -94,11 +94,11 @@
 									<b>뫄뫄 호텔</b>
 								</h4>
 								<div class="col-12 ">
-									<img src="assets/img/review_star.jpg" class="review_star">
-									<img src="assets/img/review_star.jpg" class="review_star">
-									<img src="assets/img/review_star.jpg" class="review_star">
-									<img src="assets/img/review_star.jpg" class="review_star">
-									<img src="assets/img/review_halfstar.jpg" class="review_star">
+									<img src="assets/img/booking/review_star.jpg" class="review_star">
+									<img src="assets/img/booking/review_star.jpg" class="review_star">
+									<img src="assets/img/booking/review_star.jpg" class="review_star">
+									<img src="assets/img/booking/review_star.jpg" class="review_star">
+									<img src="assets/img/booking/review_halfstar.jpg" class="review_star">
 									4.5
 
 									<p class="card-text">Some quick example text to build on
@@ -123,11 +123,11 @@
 									<b>뫄뫄 호텔</b>
 								</h4>
 								<div class="col-12 ">
-									<img src="assets/img/review_star.jpg" class="review_star">
-									<img src="assets/img/review_star.jpg" class="review_star">
-									<img src="assets/img/review_star.jpg" class="review_star">
-									<img src="assets/img/review_star.jpg" class="review_star">
-									<img src="assets/img/review_halfstar.jpg" class="review_star">
+									<img src="assets/img/booking/review_star.jpg" class="review_star">
+									<img src="assets/img/booking/review_star.jpg" class="review_star">
+									<img src="assets/img/booking/review_star.jpg" class="review_star">
+									<img src="assets/img/booking/review_star.jpg" class="review_star">
+									<img src="assets/img/booking/review_halfstar.jpg" class="review_star">
 									4.5
 
 									<p class="card-text">Some quick example text to build on
@@ -156,11 +156,11 @@
 										<b>뫄뫄 호텔</b>
 									</h4>
 									<div class="col-12 ">
-										<img src="assets/img/review_star.jpg" class="review_star">
-										<img src="assets/img/review_star.jpg" class="review_star">
-										<img src="assets/img/review_star.jpg" class="review_star">
-										<img src="assets/img/review_star.jpg" class="review_star">
-										<img src="assets/img/review_halfstar.jpg" class="review_star">
+										<img src="assets/img/booking/review_star.jpg" class="review_star">
+										<img src="assets/img/booking/review_star.jpg" class="review_star">
+										<img src="assets/img/booking/review_star.jpg" class="review_star">
+										<img src="assets/img/booking/review_star.jpg" class="review_star">
+										<img src="assets/img/booking/review_halfstar.jpg" class="review_star">
 										4.5
 
 										<p class="card-text">Some quick example text to build on
@@ -185,11 +185,11 @@
 										<b>뫄뫄 호텔</b>
 									</h4>
 									<div class="col-12 ">
-										<img src="assets/img/review_star.jpg" class="review_star">
-										<img src="assets/img/review_star.jpg" class="review_star">
-										<img src="assets/img/review_star.jpg" class="review_star">
-										<img src="assets/img/review_star.jpg" class="review_star">
-										<img src="assets/img/review_halfstar.jpg" class="review_star">
+										<img src="assets/img/booking/review_star.jpg" class="review_star">
+										<img src="assets/img/booking/review_star.jpg" class="review_star">
+										<img src="assets/img/booking/review_star.jpg" class="review_star">
+										<img src="assets/img/booking/review_star.jpg" class="review_star">
+										<img src="assets/img/booking/review_halfstar.jpg" class="review_star">
 										4.5
 
 										<p class="card-text">Some quick example text to build on
@@ -217,11 +217,11 @@
 											<b>뫄뫄 호텔</b>
 										</h4>
 										<div class="col-12 ">
-											<img src="assets/img/review_star.jpg" class="review_star">
-											<img src="assets/img/review_star.jpg" class="review_star">
-											<img src="assets/img/review_star.jpg" class="review_star">
-											<img src="assets/img/review_star.jpg" class="review_star">
-											<img src="assets/img/review_halfstar.jpg" class="review_star">
+											<img src="assets/img/booking/review_star.jpg" class="review_star">
+											<img src="assets/img/booking/review_star.jpg" class="review_star">
+											<img src="assets/img/booking/review_star.jpg" class="review_star">
+											<img src="assets/img/booking/review_star.jpg" class="review_star">
+											<img src="assets/img/booking/review_halfstar.jpg" class="review_star">
 											4.5
 
 											<p class="card-text">Some quick example text to build on
@@ -246,11 +246,11 @@
 											<b>뫄뫄 호텔</b>
 										</h4>
 										<div class="col-12 ">
-											<img src="assets/img/review_star.jpg" class="review_star">
-											<img src="assets/img/review_star.jpg" class="review_star">
-											<img src="assets/img/review_star.jpg" class="review_star">
-											<img src="assets/img/review_star.jpg" class="review_star">
-											<img src="assets/img/review_halfstar.jpg" class="review_star">
+											<img src="assets/img/booking/review_star.jpg" class="review_star">
+											<img src="assets/img/booking/review_star.jpg" class="review_star">
+											<img src="assets/img/booking/review_star.jpg" class="review_star">
+											<img src="assets/img/booking/review_star.jpg" class="review_star">
+											<img src="assets/img/booking/review_halfstar.jpg" class="review_star">
 											4.5
 
 											<p class="card-text">Some quick example text to build on
