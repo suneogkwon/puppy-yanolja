@@ -48,7 +48,7 @@
 			<button type="button" onclick="" class="btn btn-primary text-white">전주</button>
 		</div>
 	</div>
-	<div class="py-4"></div>
+	<div class="py-3"></div>
 	<div class="row gy-5 row-cols-2 row-cols-lg-4">
 		<div class="col">
 			<div class="border">
@@ -139,7 +139,7 @@
 		<h2 class="fw-bold">Recommend Pet Cafe</h2>
 	</div>
 
-	<div class="py-4"></div>
+	<div class="py-3"></div>
 	<div class="row g-2 g-lg-5 row-cols-1 row-cols-lg-2">
 		<div class="col">
 			<div class="row">
@@ -206,25 +206,72 @@
 		<h2 class="fw-bold">Review</h2>
 	</div>
 
-	<div class="py-4"></div>
+	<div class="py-3"></div>
 	<div id="reviewCarousel" class="swiper-container">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<a class="main-review-content" href="#">
+			<div class="swiper-slide border">
+				<a class="main-review-content d-block p-3 text-dark" href="#">
 						정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~
 				</a>
-				<div class="row">
-					
+				<div class="d-flex align-items-center p-3">
+					<a class="main-review-img d-block rounded-circle me-3" href="#">
+						<img class="img-fluid h-100" src="assets/img/main-best-hotel-temp-img.jpg">
+					</a>
+					<div class="flex-grow-1">
+						<a class="h5 fw-bold" href="#">테스트 호텔</a>
+						<span class="review-score-bg">
+							<i class="review-score"></i>
+						</span>
+					</div>
 				</div>
 			</div>
-			<div class="swiper-slide">
-				<img src="assets/img/main-banner/2.jpg" class="d-block w-100" alt="...">
+			<div class="swiper-slide border">
+				<a class="main-review-content d-block p-3 text-dark" href="#">
+						정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~
+				</a>
+				<div class="d-flex align-items-center p-3">
+					<a class="main-review-img d-block rounded-circle me-3" href="#">
+						<img class="img-fluid h-100" src="assets/img/main-best-hotel-temp-img.jpg">
+					</a>
+					<div class="flex-grow-1">
+						<a class="h5 fw-bold" href="#">테스트 호텔</a>
+						<span class="review-score-bg">
+							<i class="review-score"></i>
+						</span>
+					</div>
+				</div>
 			</div>
-			<div class="swiper-slide">
-				<img src="assets/img/main-banner/3.jpg" class="d-block w-100" alt="...">
+			<div class="swiper-slide border">
+				<a class="main-review-content d-block p-3 text-dark" href="#">
+						정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~
+				</a>
+				<div class="d-flex align-items-center p-3">
+					<a class="main-review-img d-block rounded-circle me-3" href="#">
+						<img class="img-fluid h-100" src="assets/img/main-best-hotel-temp-img.jpg">
+					</a>
+					<div class="flex-grow-1">
+						<a class="h5 fw-bold" href="#">테스트 호텔</a>
+						<span class="review-score-bg">
+							<i class="review-score"></i>
+						</span>
+					</div>
+				</div>
 			</div>
-			<div class="swiper-slide">
-				<img src="assets/img/main-banner/4.jpg" class="d-block w-100" alt="...">
+			<div class="swiper-slide border">
+				<a class="main-review-content d-block p-3 text-dark" href="#">
+						정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~정말 좋아요~
+				</a>
+				<div class="d-flex align-items-center p-3">
+					<a class="main-review-img d-block rounded-circle me-3" href="#">
+						<img class="img-fluid h-100" src="assets/img/main-best-hotel-temp-img.jpg">
+					</a>
+					<div class="flex-grow-1">
+						<a class="h5 fw-bold" href="#">테스트 호텔</a>
+						<span class="review-score-bg">
+							<i class="review-score"></i>
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="swiper-button-prev"></div>
@@ -237,7 +284,7 @@
 		new Swiper('#mainCarousel', {
 			// Optional parameters
 			loop : true,
-			slidesPerView : 'auto',
+			slidesPerView : 2,
 			centeredSlides : true,
 			spaceBetween : 30,
 			autoplay: {
@@ -276,8 +323,12 @@
 			},
 			breakpoints : {
 				576 : {
-					slidesPerView : 3,
+					slidesPerView : 2,
+					centeredSlides : false,
 				},
+				992 : {
+					slidesPerView : 3,
+				}
 			},
 		});
 	})
