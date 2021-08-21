@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="co.yedam.puppy.shopItem.service.shop-item-mapper">
+
+	<!-- 전체 상품 리스트 조회 -->
+	<select id="shopItemList" resultType="co.yedam.puppy.shopItem.vo.ShopItemVO">
+		SELECT * FROM shop_item where shop_no = {#shopNo}
+	</select>
+	
+	<!-- 상품 한건 조회 -->
+	<select id="shopItemSelect" parameterType="co.yedam.puppy.shopItem.vo.ShopItemVO" 
+	resultType="co.yedam.puppy.shopItem.vo.ShopItemVO">
+		SELECT * FROM shop_item where shop_no = ? and it_no = ?
+	</select>
+	
+	<!-- 상품 등록 -->
+	<insert id="shopItemInsert" parameterType="co.yedam.puppy.shopItem.vo.ShopItemVO" >
+		insert into shop_item values(
+		item_seq.NEXTVAL,shop_no, it_name, it_model, it_explanText,cust_price,
+		price, save_money, shipping_charge, main_img, sub_img, review_no )
+	</insert>
+	
+	<!-- 상품 수정 -->
+	<update id="shopItemUpdate" parameterType="co.yedam.puppy.shopItem.vo.ShopItemVO">
+		update shop_item set it_name = ? , it_model = ? , it_explanText = ? , cust_price = ?,
+		price = ? , save_money = ? , shipping_charge = ? , main_img = ? , sub_img = ? 
+		where it_no = ?
+	</update>
+	
+	
+</mapper>

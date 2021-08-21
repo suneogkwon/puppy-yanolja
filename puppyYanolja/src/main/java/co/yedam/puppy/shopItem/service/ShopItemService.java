@@ -7,7 +7,7 @@ import co.yedam.puppy.shopItem.vo.ShopItemVO;
 public interface ShopItemService {
 
 	// 상품 전체리스트
-	List<ShopItemVO> shopItemList();
+	List<ShopItemVO> shopItemList(int shopNo);
 	
 	// 상품 한건 보기
 	ShopItemVO shopItemSelect(ShopItemVO vo);
