@@ -118,27 +118,16 @@ ul.fit {
 			<div class="css-g9ui5n">
 				<div style="width: 100%">
 					<div class="css-cssveg">
-						<label for="inputBreed" class="form-label"></label> 견종 <span
-							class="red">*</span><input type="text" placeholder="견종을 입력해주세요."
-							name="petInfo.breed" value="" autocorrect="off"
+						<label for="inputKG" class="form-label"></label> 몸무게 <span
+							class="red">*</span><input type="text" placeholder="강아지 몸무게를 입력해주세요."
+							name="petInfo.kg" value="" autocorrect="off"
 							autocapitalize="none" class="css-1pfv6fx">
 					</div>
-					<input type="hidden" name="petInfo.breed" value="">
+					<input type="hidden" name="petInfo.kg" value="">
 				</div>
 			</div>
 			
 
-			<div class="css-g9ui5n">
-				<div style="width: 100%">
-					<div class="css-cssveg">
-						<label for="inputBreed" class="form-label"></label> 견종 <span
-							class="red">*</span><input type="text" placeholder="견종을 입력해주세요."
-							name="petInfo.breed" value="" autocorrect="off"
-							autocapitalize="none" class="css-1pfv6fx">
-					</div>
-					<input type="hidden" name="petInfo.breed" value="">
-				</div>
-			</div>
 
 			<div class="css-g9ui5n">
 				<div style="width: 100%">

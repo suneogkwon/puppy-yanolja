@@ -17,5 +17,4 @@ public interface ShopItemService {
 	int shopItemDelete(ShopItemVO vo);
 	int shopItemUpdate(ShopItemVO vo);
 	
-	
 }
