@@ -17,6 +17,9 @@ public class ShopVO {
 	private int partner_no;        // 관리자 번호
 	private int category_no;	   // 운영 카테고리 ex) 1. 호텔 2. 유치원 3. 애견카페.....
 	private int location_no;       // 지역 번호 ex) 1. 서울 2. 경기도 .....
+	private String main_img;	   // 메인이미지
+	private String sub_img;		   // 서브이미지
+	
 	
 	
 
