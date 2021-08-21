@@ -46,10 +46,10 @@ public class FrontController extends HttpServlet {
 	 * @see Servlet#init(ServletConfig)
 	 */
 	public void init(ServletConfig config) throws ServletException {
-		// 怨듯넻
+		// 공통
 		map.put("/home.do", new HomeCmd());
 		
-		// �쉶�썝愿��젴
+		// 회원관련
 		map.put("/login.do", null);
 		map.put("/loginForm.do", null);
 		map.put("/logout.do", null);
@@ -65,7 +65,7 @@ public class FrontController extends HttpServlet {
 		map.put("/myPageUpdateForm.do", null);
 		map.put("/myPageUpdate.do", null);
 		
-		// 寃뚯떆�뙋愿��젴
+		// 게시판관련
 		map.put("/boardList.do", new BoardListCmd());
 		map.put("/boardInsertForm.do", new BoardInsertFormCmd());
 		map.put("/boardInsert.do", new BoardInsertCmd());
@@ -81,11 +81,11 @@ public class FrontController extends HttpServlet {
 		map.put("/commentDelete.do", new CommentDeleteCmd());
 		map.put("/QnaInsert.do", new QnaInsertCmd());
 		
-		// �꽌鍮꾩뒪愿��젴 (怨듯넻)
+		// 서비스관련(공통)
 		map.put("/reservationList.do", null);
 		map.put("/reservationView.do", null);
 		
-		// �꽌鍮꾩뒪愿��젴 (硫ㅻ쾭)
+		// 서비스관련(멤버)
 		map.put("/reservationForm.do", null);
 		map.put("/reservationWriteForm.do", null);
 		map.put("/reservationWrite.do", null);
@@ -95,13 +95,13 @@ public class FrontController extends HttpServlet {
 		map.put("/reviewInsertForm.do", null);
 		map.put("/reviewInsert.do", null);
 		
-		// �꽌鍮꾩뒪愿��젴 (�뙆�듃�꼫)
+		// 서비스관련(파트너)
 		map.put("/reservationList.do", null);//
 		map.put("/reservationUpdateForm.do", null);
 		map.put("/reservationUpdate.do", null);
 		map.put("/reservationDelete.do", null);
 		
-		// �삁�빟
+		// 예약
 		map.put("/reservationSelectForm.do", new ReservationSelectForm());
 		map.put("/reservationSelectDetail.do", new ReservationSelectDetail());
 		map.put("/reservationSelect.do", new ReservationSelect());
