@@ -2,7 +2,6 @@ package co.yedam.puppy.booking.vo;
 
 public class BookingVO {
 	
-	
 	private int no;
 	private String company_owner;
 	private String company_name;
