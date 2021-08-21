@@ -1,5 +1,6 @@
 package co.yedam.puppy.booking.vo;
 
+
 public class BookingVO {
 	
 	private int no;
@@ -11,7 +12,7 @@ public class BookingVO {
 	private String company_addr;
 	private int bank_use;
 	private String bank_account;
-	private int partner_no;
+	private int partner_no;	// N:1
 	private int category_no;
 	private int location_no;
 	
