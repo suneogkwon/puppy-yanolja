@@ -419,7 +419,7 @@
                              <div class="card-body">
                                 <h5 class="card-title"><b>오라카이 송도파크 호텔</b></h5>
                                 <p class="card-text">차원이 다른 아늑함! 나의 작은 가족을 위한 최상의 서비스를 최대 8월말까지~</p>
-                                <a href="#!" class="btn btn-dark"><small>전체보기</small></a>
+                                <a href="reservationSelectDetail.do" class="btn btn-dark"><small>전체보기</small></a>
                              </div>
                           </div>
                        </div>
