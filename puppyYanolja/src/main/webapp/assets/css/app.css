@@ -6,8 +6,12 @@
 /* main review */
 .main-review-img {width:60px;height:60px;overflow:hidden}
 .main-review-img img {object-fit:cover}
-#reviewCarousel .review-score-bg {display:block; width:100px; height:30px; background:url(../img/review_emptystar.png) repeat-x left/20px}
-#reviewCarousel .review-score-bg .review-score {display:block; width:80%; height:30px; background:url(../img/review_star.png) repeat-x left/20px}
+#reviewCarousel .review-score-bg {display:block; width:100px; height:20px; background:url(../img/review_emptystar.png) repeat-x left/20px}
+#reviewCarousel .review-score-bg .review-score {display:block; width:80%; height:20px; background:url(../img/review_star.png) repeat-x left/20px}
+#bestHotelMainList .review-score-bg,
+#recCafeMainList .review-score-bg{display:inline-block; width:75px; height:15px; background:url(../img/review_emptystar.png) repeat-x left/15px}
+#bestHotelMainList .review-score-bg .review-score,
+#recCafeMainList .review-score-bg .review-score{display:inline-block; width:80%; height:15px; background:url(../img/review_star.png) repeat-x left/15px}
 
 .review_star {
 	width: 20px;
