@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <div class="container-fluid border-bottom shadow-sm bg-white">
     <div class="container">
         <div class="row align-items-center justify-content-center">
-            <div class="col-12 col-md-9"> 
+            <div class="col-12 col-md-9">
                 <nav class="nav justify-content-end fw-bold">
-                    <a href="login.do" class="nav-link px-2">Login</a>
-                    <a href="registerForm.do" class="nav-link px-2">Register</a>
-                    <a href="mypage.do" class="nav-link px-2">My page</a>
-                    <a href="wishlist.do" class="nav-link px-2">Wishlist</a>
+                    <c:if test="${not empty member}">
+                        <a href="logout.do" class="nav-link px-2">Logout</a>
+                        <a href="mypage.do" class="nav-link px-2">My page</a>
+                        <a href="wishlist.do" class="nav-link px-2">Wishlist</a>
+                    </c:if>
+                    <c:if test="${empty member}">
+                        <a href="login.do" class="nav-link px-2">Login</a>
+                        <a href="registerForm.do" class="nav-link px-2">Register</a>
+                    </c:if>
                 </nav>
             </div>
             <div class="col-12 text-center position-relative">
@@ -21,7 +27,7 @@
                 <form id="searchForm" name="searchForm" action="" method="GET">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control form-control-lg" placeholder="찾으시는 호텔 이름을 입력해주세요." aria-describedby="button-addon2">
-                        <button class="btn btn-dark" type="button" id="button-addon2"><i class="xi-search"></i></button>
+                        <button class="btn btn-dark" type="submit" id="button-addon2"><i class="xi-search"></i></button>
                     </div>
                 </form>
             </div>
