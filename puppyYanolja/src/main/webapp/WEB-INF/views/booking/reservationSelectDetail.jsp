@@ -367,7 +367,7 @@
 	</div>
 	<br><br>
 	<div class="d-grid gap-2">
- 		 <button class="btn btn-primary" type="button">예약하기</button>
+ 		 <button class="btn btn-primary" type="button" onclick="location.href='payForm.do'">예약하기</button>
 	</div>
 		
 </div>

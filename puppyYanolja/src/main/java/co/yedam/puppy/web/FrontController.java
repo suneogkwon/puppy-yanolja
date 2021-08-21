@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import co.yedam.puppy.common.Command;
 import co.yedam.puppy.main.command.HomeCmd;
 import co.yedam.puppy.shop.command.PetShopList;
+import co.yedam.puppy.shop.command.PetShopPayForm;
 import co.yedam.puppy.shop.command.PetShopProduct;
 import co.yedam.puppy.shop.command.ReservationSelectDetail;
 import co.yedam.puppy.shop.command.ReservationSelectForm;
@@ -92,6 +93,7 @@ public class FrontController extends HttpServlet {
 		map.put("/reservationSelect.do", new ReservationSelect());
 		map.put("/petShopList.do", new PetShopList());
 		map.put("/petShopProduct.do", new PetShopProduct());
+		map.put("/petShopPayForm.do", new PetShopPayForm());
 	}
 
 	/**
