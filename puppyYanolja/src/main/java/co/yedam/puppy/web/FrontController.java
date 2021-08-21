@@ -25,6 +25,12 @@ import co.yedam.puppy.board.command.CommentUpdateCmd;
 import co.yedam.puppy.board.command.CommentUpdateFormCmd;
 import co.yedam.puppy.board.command.QnaInsertCmd;
 import co.yedam.puppy.common.Command;
+import co.yedam.puppy.main.command.HomeCmd;
+import co.yedam.puppy.shop.command.PetShopList;
+import co.yedam.puppy.shop.command.PetShopPayForm;
+import co.yedam.puppy.shop.command.PetShopProduct;
+import co.yedam.puppy.shop.command.ReservationSelectDetail;
+import co.yedam.puppy.shop.command.ReservationSelectForm;
 
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -83,7 +89,7 @@ public class FrontController extends HttpServlet {
 		map.put("/reservationForm.do", null);
 		map.put("/reservationWriteForm.do", null);
 		map.put("/reservationWrite.do", null);
-		map.put("/payForm.do", null);
+		map.put("/payForm.do", new PayForm());
 		map.put("/orderComplete.do", null);//
 		map.put("/reviewList.do", null);
 		map.put("/reviewInsertForm.do", null);
@@ -97,7 +103,11 @@ public class FrontController extends HttpServlet {
 		
 		// �삁�빟
 		map.put("/reservationSelectForm.do", new ReservationSelectForm());
-		
+		map.put("/reservationSelectDetail.do", new ReservationSelectDetail());
+		map.put("/reservationSelect.do", new ReservationSelect());
+		map.put("/petShopList.do", new PetShopList());
+		map.put("/petShopProduct.do", new PetShopProduct());
+		map.put("/petShopPayForm.do", new PetShopPayForm());
 	}
 
 	/**

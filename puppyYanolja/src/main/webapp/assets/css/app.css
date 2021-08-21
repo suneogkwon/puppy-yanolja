@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 헤더 관련 */
+#headerLogo {height:170px;}
+
+/* main review */
+.main-review-img {width:60px;height:60px;overflow:hidden}
+.main-review-img img {object-fit:cover}
+#reviewCarousel .review-score-bg {display:block; width:100px; height:20px; background:url(../img/review_emptystar.png) repeat-x left/20px}
+#reviewCarousel .review-score-bg .review-score {display:block; width:80%; height:20px; background:url(../img/review_star.png) repeat-x left/20px}
+#bestHotelMainList .review-score-bg,
+#recCafeMainList .review-score-bg{display:inline-block; width:75px; height:15px; background:url(../img/review_emptystar.png) repeat-x left/15px}
+#bestHotelMainList .review-score-bg .review-score,
+#recCafeMainList .review-score-bg .review-score{display:inline-block; width:80%; height:15px; background:url(../img/review_star.png) repeat-x left/15px}
+
+.review_star {
+	width: 20px;
+	height: 20px;
+}
+
+.gps_img {
+	height: 20px;
+}
+
+.room_imgBox {
+	height: 250px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.room_img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.btn-primary {
+	color: #fff;
+}
+
+#carouselExampleIndicators {
+	height: 700px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.carousel-item>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.review_Number {
+	font-size: 3rem;
+}
+
+.review_starTop {
+	width: 50px;
+	height: 50px;
+	clear: both;
+}
+
+.smile_icon01 {
+	height: 50px;
+}
+
+.review_id {
+	color: #d79b70;
+	font-weight: 800em;
+}
+
+.review_contents {
+	color: #7c7c7c;
+}
