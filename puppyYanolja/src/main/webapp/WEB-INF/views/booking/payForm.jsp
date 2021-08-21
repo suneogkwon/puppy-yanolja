@@ -40,7 +40,8 @@ ul.fit {
 }
 </style>
 
-<div class="container"><br>
+<div class="container">
+	<br>
 	<div class="container p-3 my-3 border">
 		<form class="row g-3">
 			<div class="col-12" style="margin-top: 20px;">
@@ -72,8 +73,9 @@ ul.fit {
 					</div>
 					<input type="hidden" name="partnerInfo.tel" value="">
 				</div>
-				<div class="col-12 small-font">입력하신 번호는 안심번호로 변경되어 숙소에 전달됩니다. 단,
-					안심번호로 처리가 어려운 경우에 한해 제한적으로 개인정보 제공 동의에 근거하여 실제 휴대폰번호가 전달될 수 있습니다.</div>
+				<div class="col-12 small-font">입력하신 번호는 안심번호로 변경되어 숙소에 전달됩니다.
+					단, 안심번호로 처리가 어려운 경우에 한해 제한적으로 개인정보 제공 동의에 근거하여 실제 휴대폰번호가 전달될 수
+					있습니다.</div>
 			</div>
 
 
@@ -84,17 +86,18 @@ ul.fit {
 		<form class="row g-3">
 			<div class="col-12" style="margin-top: 20px;">
 				<h4>
-					<b>정보 <span class="red">*</span></b>
+					<b>강아지 정보 <span class="red">*</span></b>
 				</h4>
 			</div>
 
 			<div class="css-g9ui5n">
 				<div style="width: 100%">
 					<div class="css-cssveg">
-						<label for="inputName" class="form-label"></label> 이름 <span
-							class="red">*</span><input type="text" placeholder="이름을 입력해주세요."
-							name="petInfo.name" required value="" autocorrect="off"
-							autocapitalize="none" class="css-1pfv6fx">
+						<label for="inputName" class="form-label"></label> 강아지 이름 <span
+							class="red">*</span><input type="text"
+							placeholder="강아지 이름을 입력해주세요." name="petInfo.name" required
+							value="" autocorrect="off" autocapitalize="none"
+							class="css-1pfv6fx">
 					</div>
 					<input type="hidden" name="petInfo.name" value="">
 				</div>
@@ -109,6 +112,43 @@ ul.fit {
 							autocapitalize="none" class="css-1pfv6fx">
 					</div>
 					<input type="hidden" name="petInfo.breed" value="">
+				</div>
+			</div>
+
+			<div class="css-g9ui5n">
+				<div style="width: 100%">
+					<div class="css-cssveg">
+						<label for="inputBreed" class="form-label"></label> 견종 <span
+							class="red">*</span><input type="text" placeholder="견종을 입력해주세요."
+							name="petInfo.breed" value="" autocorrect="off"
+							autocapitalize="none" class="css-1pfv6fx">
+					</div>
+					<input type="hidden" name="petInfo.breed" value="">
+				</div>
+			</div>
+			
+
+			<div class="css-g9ui5n">
+				<div style="width: 100%">
+					<div class="css-cssveg">
+						<label for="inputBreed" class="form-label"></label> 견종 <span
+							class="red">*</span><input type="text" placeholder="견종을 입력해주세요."
+							name="petInfo.breed" value="" autocorrect="off"
+							autocapitalize="none" class="css-1pfv6fx">
+					</div>
+					<input type="hidden" name="petInfo.breed" value="">
+				</div>
+			</div>
+
+			<div class="css-g9ui5n">
+				<div style="width: 100%">
+					<div class="css-cssveg">
+						<label for="inputRef" class="form-label"></label> 참고사항 <input
+							type="text" placeholder="강아지에 대해 알아야 할 참고사항을 입력해주세요."
+							name="petInfo.ref" value="" autocorrect="off"
+							autocapitalize="none" class="css-1pfv6fx">
+					</div>
+					<input type="hidden" name="petInfo.ref" value="">
 				</div>
 			</div>
 		</form>
@@ -132,6 +172,9 @@ ul.fit {
 		</form>
 	</div>
 
+	<div class="container p-3 my-3 border"></div>
+
+
 	<div class="container p-3 my-3 border">
 		<div class="container p-3" style="background-color: #fef8f2;">
 			<ul class="fit">
@@ -144,8 +187,9 @@ ul.fit {
 				<li><div class="notice">미성년자 및 법정대리인 필수</div>
 					<div>미성년자는 법정대리인 동행 없이 투숙이 불가능합니다.</div></li>
 			</ul>
-
 		</div>
+
+
 		<p>
 		<div class="form-check" style="font-size: 16px">
 			<input class="form-check-input" type="checkbox" value=""
@@ -159,7 +203,7 @@ ul.fit {
 		<button class="btn btn-primary" type="button"
 			style="color: white; height: 30pt;">원 결제하기</button>
 	</div>
-	<div class="col-12 small-font">(주)강아지야놀자는 통신판매중개업자로서, 통신판매의 당사자가 아니라는 사실을 고지하며
-	상품의 결제, 이용 및 환불 등과관련한 의무와 책임은 각 판매자에게 있습니다.</div>
+	<div class="col-12 small-font">(주)강아지야놀자는 통신판매중개업자로서, 통신판매의 당사자가
+		아니라는 사실을 고지하며 상품의 결제, 이용 및 환불 등과관련한 의무와 책임은 각 판매자에게 있습니다.</div>
 
 </div>
