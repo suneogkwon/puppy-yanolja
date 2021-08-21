@@ -1,11 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>
+	<c:if test="${not empty pageTitle}">${pageTitle}</c:if>
+	<c:if test="${empty pageTitle}">강아지야놀자</c:if>
+</title>
 
 <link rel="stylesheet" href="assets/css/app.css">
 <script src="assets/js/app.js"></script>

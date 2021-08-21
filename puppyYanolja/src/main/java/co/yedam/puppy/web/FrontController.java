@@ -25,12 +25,8 @@ import co.yedam.puppy.board.command.CommentUpdateCmd;
 import co.yedam.puppy.board.command.CommentUpdateFormCmd;
 import co.yedam.puppy.board.command.QnaInsertCmd;
 import co.yedam.puppy.common.Command;
-import co.yedam.puppy.main.command.HomeCmd;
-import co.yedam.puppy.shop.command.PetShopList;
-import co.yedam.puppy.shop.command.PetShopPayForm;
-import co.yedam.puppy.shop.command.PetShopProduct;
-import co.yedam.puppy.shop.command.ReservationSelectDetail;
-import co.yedam.puppy.shop.command.ReservationSelectForm;
+import co.yedam.puppy.main.command.Home;
+import co.yedam.puppy.shop.command.*;
 
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -47,7 +43,7 @@ public class FrontController extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		// 공통
-		map.put("/home.do", new HomeCmd());
+		map.put("/home.do", new Home());
 		
 		// 회원관련
 		map.put("/login.do", null);

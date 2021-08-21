@@ -5,15 +5,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import co.yedam.puppy.common.Command;
 
-public class PetShopList implements Command {
+public class PayForm implements Command {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
-		
-		
-		
-		return "booking/petShopList";
+		return "booking/payForm";
 	}
 
 }
