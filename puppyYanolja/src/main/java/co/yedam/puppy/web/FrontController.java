@@ -64,7 +64,6 @@ public class FrontController extends HttpServlet {
 		map.put("/memberIdCheck.do", new memberIdCheck());
 
 		// 게시판관련
-<<<<<<< HEAD
 		map.put("/boardList.do", new BoardListCmd());
 		map.put("/boardInsertForm.do", new BoardInsertFormCmd());
 		map.put("/boardInsert.do", new BoardInsertCmd());
@@ -80,34 +79,11 @@ public class FrontController extends HttpServlet {
 		map.put("/commentDelete.do", new CommentDeleteCmd());
 		map.put("/QnaInsert.do", new QnaInsertCmd());
 		
-		// 서비스관련(공통)
-=======
-		map.put("/boardList.do", null);
-		map.put("/boardInsertForm.do", null);
-		map.put("/boardInsert.do", null);
-		map.put("/boardDelete.do", null);
-		map.put("/boardUpdateForm.do", null);
-		map.put("/boardUpdate.do", null);
-		map.put("/boardSelect.do", null);
-		map.put("/commentList.do", null);
-		map.put("/commentInsertForm.do", null);
-		map.put("/commentInsert.do", null);
-		map.put("/commentUpdateForm.do", null);
-		map.put("/commentUpdate.do", null);
-		map.put("/commentDelete.do", null);
-		map.put("/QnaInsert.do", null);
-
 		// 서비스관련 (공통)
->>>>>>> refs/remotes/origin/feature-main
 		map.put("/reservationList.do", null);
 		map.put("/reservationView.do", null);
-<<<<<<< HEAD
-		
-		// 서비스관련(멤버)
-=======
 
 		// 서비스관련 (멤버)
->>>>>>> refs/remotes/origin/feature-main
 		map.put("/reservationForm.do", null);
 		map.put("/reservationWriteForm.do", null);
 		map.put("/reservationWrite.do", null);
@@ -116,13 +92,8 @@ public class FrontController extends HttpServlet {
 		map.put("/reviewList.do", null);
 		map.put("/reviewInsertForm.do", null);
 		map.put("/reviewInsert.do", null);
-<<<<<<< HEAD
-		
-		// 서비스관련(파트너)
-=======
 
 		// 서비스관련 (파트너)
->>>>>>> refs/remotes/origin/feature-main
 		map.put("/reservationList.do", null);//
 		map.put("/reservationUpdateForm.do", null);
 		map.put("/reservationUpdate.do", null);
@@ -141,7 +112,7 @@ public class FrontController extends HttpServlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO 媛먯옄媛먯옄 ���솉�떒媛먯옄~!!!!!! �븳�냼�씪!!!!泥대옿!!!!�뀪_�뀪!
+		// TODO 
 
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
@@ -153,15 +124,9 @@ public class FrontController extends HttpServlet {
 		Command command = map.get(path);
 
 		String view = command.execute(request, response);
-<<<<<<< HEAD
-		
-		if(view.startsWith("ajax:")) {	// ajax �뜲�씠�꽣 泥섎━
-			String data = view.replace("ajax:", "");
-=======
 
 		if(view.endsWith(".ajax")) {	// ajax 데이터 처리
 			String data = view.replace(".ajax", "");
->>>>>>> refs/remotes/origin/feature-main
 			response.getWriter().print(data);
 		} else if(view.endsWith(".do")) {
 			response.sendRedirect(view);
