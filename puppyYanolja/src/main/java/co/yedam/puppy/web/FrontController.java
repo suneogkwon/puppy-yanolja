@@ -109,6 +109,7 @@ public class FrontController extends HttpServlet {
 		map.put("/petShopProduct.do", new PetShopProduct());
 		map.put("/petShopPayForm.do", new PetShopPayForm());
 		map.put("/petShopItemInsetFrom.do", new PetShopItemInsetFrom());
+		map.put("/itemUpload.do", new ItemUpload());
 		
 	}
 

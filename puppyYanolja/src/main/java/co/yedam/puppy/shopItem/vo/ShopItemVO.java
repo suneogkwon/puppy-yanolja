@@ -14,6 +14,7 @@ public class ShopItemVO {
 	private int shippingCharge; // 배송비
 	
 	private String mainImg; // 상품 메인 이미지 
+	private String mainImgUrl;
 	private String subImg;  // 상품 상세 이미지
 	
 	public ShopItemVO() {
@@ -92,6 +93,16 @@ public class ShopItemVO {
 	}
 	public void setSubImg(String subImg) {
 		this.subImg = subImg;
+	}
+
+
+	public String getMainImgUrl() {
+		return mainImgUrl;
+	}
+
+
+	public void setMainImgUrl(String mainImgUrl) {
+		this.mainImgUrl = mainImgUrl;
 	}
 
 	

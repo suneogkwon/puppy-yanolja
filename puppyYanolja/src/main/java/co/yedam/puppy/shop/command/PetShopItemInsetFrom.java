@@ -10,9 +10,6 @@ public class PetShopItemInsetFrom implements Command {
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		// TODO 상품등록 폼
-		
-		
-		
 		return "booking/petShopItemInsetFrom";
 	}
 

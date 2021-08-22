@@ -17,8 +17,8 @@
 	<!-- 상품 등록 -->
 	<insert id="shopItemInsert" parameterType="ShopItemVO" >
 		insert into shop_item values(
-		item_seq.NEXTVAL,{#shopNo}, {#itNo}, {#itCategory}, {#itExplanText},{#custPrice},
-		{#price}, {#saveMoney}, {#shippingCharge}, {#mainImg}, {#subImg})
+		item_seq.NEXTVAL,#{shopNo}, #{itName}, #{itCategory}, #{itExplanText},#{custPrice},
+		#{price}, #{saveMoney}, #{shippingCharge}, #{mainImg}, #{subImg}, #{mainImgUrl})
 	</insert>
 	
 	<!-- 상품 수정 -->
