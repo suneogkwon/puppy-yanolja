@@ -14,18 +14,20 @@ import java.io.IOException;
 
 
 public class DataSource {
-
     private static SqlSessionFactory sqlSessionFactory;
 
-    public static SqlSession getSession(){
+    private DataSource() {
+        String resource = "config/mybatis-config.xml";
         InputStream inputStream = null;
         try {
-            String resource = "config/mybatis-config.xml";
             inputStream = Resources.getResourceAsStream(resource);
-            sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+    }
+
+    public static SqlSession getSession(){
         return sqlSessionFactory.openSession(true);
 
     }

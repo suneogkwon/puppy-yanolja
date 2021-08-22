@@ -16,6 +16,8 @@ public class MemberServiceMapper {
     }
 
     public Boolean signUp(MemberVO vo) {
+        if(map.isMemberId(vo.getId()) != 0)    //아이디 중복
+            return false;
         if(map.signUp(vo) == 0)   // 회원가입 실패시
             return false;
 

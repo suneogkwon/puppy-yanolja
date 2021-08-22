@@ -4,7 +4,6 @@ import co.yedam.puppy.common.Command;
 import co.yedam.puppy.member.service.MemberServiceMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import javax.servlet.http.HttpServletRequest;
