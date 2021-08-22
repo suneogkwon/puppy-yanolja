@@ -11,7 +11,7 @@
 	<!-- 상품 한건 조회 -->
 	<select id="shopItemSelect" parameterType="ShopItemVO" 
 	resultType="ShopItemVO">
-		SELECT * FROM shop_item where it_no = {#itNo}
+		SELECT * FROM shop_item where it_no = #{itNo}
 	</select>
 	
 	<!-- 상품 등록 -->

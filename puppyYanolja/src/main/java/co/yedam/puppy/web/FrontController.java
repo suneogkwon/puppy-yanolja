@@ -103,9 +103,13 @@ public class FrontController extends HttpServlet {
 		map.put("/reservationSelectForm.do", new ReservationSelectForm());
 		map.put("/reservationSelectDetail.do", new ReservationSelectDetail());
 		map.put("/reservationSelect.do", new ReservationSelect());
+		
+		// PET SHOP = shopItem
 		map.put("/petShopList.do", new PetShopList());
 		map.put("/petShopProduct.do", new PetShopProduct());
 		map.put("/petShopPayForm.do", new PetShopPayForm());
+		map.put("/petShopItemInsetFrom.do", new PetShopItemInsetFrom());
+		
 	}
 
 	/**
