@@ -25,13 +25,21 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-6 text-end">
+                                <div class="row g-0 justify-content-center text-center">
+                                    <div class="col-5">
+                                        <ul class="list-unstyled">
+                                            <li>일반 이용 고객</li>
+                                            <li>반려동물 등록 필수</li>
+                                        </ul>
                                         <a href="memberSignUpForm.do" class="btn btn-primary text-white w-75 py-4 shadow-sm">
                                             <span class="h5 fw-bold m-0">일반</span>
                                         </a>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-5">
+                                        <ul class="list-unstyled">
+                                            <li>상점 등록 고객</li>
+                                            <li>관리자 승인 필요</li>
+                                        </ul>
                                         <a href="memberSignUpForm.do" class="btn btn-info text-white w-75 py-4 shadow-sm">
                                             <span class="h5 fw-bold m-0">파트너</span>
                                         </a>

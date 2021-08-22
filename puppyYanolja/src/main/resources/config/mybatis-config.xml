@@ -7,14 +7,14 @@
 	<settings>
 		<setting name="mapUnderscoreToCamelCase" value="true" />
 	</settings>
-	
+
 	<typeAliases>
 		<typeAlias type="co.yedam.puppy.member.vo.MemberVO"
 			alias="MemberVO" />
 		<typeAlias type="co.yedam.puppy.shopItem.vo.ShopItemVO"
 			alias="ShopItemVO" />
 	</typeAliases>
-	
+
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
@@ -28,9 +28,7 @@
 	</environments>
 
 	<mappers>
-		<mapper
-			resource="co/yedam/puppy/shopItem/service/shop-item-mapper.xml" />
-		<mapper
-			resource="co/yedam/puppy/member/service/member-mapper.xml" />
+		<mapper resource="co/yedam/puppy/shopItem/service/shop-item-mapper.xml" />
+		<mapper resource="co/yedam/puppy/member/service/member-mapper.xml" />
 	</mappers>
 </configuration>
