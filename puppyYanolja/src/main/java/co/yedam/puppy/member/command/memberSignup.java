@@ -26,6 +26,9 @@ public class memberSignup implements Command {
         vo.setEmail(request.getParameter("mEmail"));
 
         if(map.signUp(vo)) {
+            request.getSession().setAttribute("member", map.getData(vo));
+            System.out.println( map.getData(vo).toString());
+            map.closeSession();
             return "member/signUpCong";
         }
         return "home";

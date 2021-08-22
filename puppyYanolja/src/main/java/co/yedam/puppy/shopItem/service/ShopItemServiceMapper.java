@@ -8,9 +8,9 @@ import co.yedam.puppy.shopItem.vo.ShopItemVO;
 
 public class ShopItemServiceMapper implements ShopItemService {
 
-	private SqlSession sqlSession = DataSource.getSession();
+	private SqlSession sqlSession = DataSource.getSession().openSession(true);
     ShopItemService mapper = sqlSession.getMapper(ShopItemService.class);
-	
+
 	@Override
 	public List<ShopItemVO> shopItemList(int shopNo) {
 		// TODO Auto-generated method stub
@@ -41,4 +41,7 @@ public class ShopItemServiceMapper implements ShopItemService {
 		return mapper.shopItemUpdate(vo);
 	}
 
+	public void closeSession(){
+		sqlSession.close();
+	}
 }

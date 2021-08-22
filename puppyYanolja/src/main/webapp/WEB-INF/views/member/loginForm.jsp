@@ -7,13 +7,13 @@
             <div class="mx-2 my-4">
                 <form id="loginForm" name="loginForm" action="login.do" method="post">
                     <div class="row mx-2">
-                        <label class="mb-3 col-3 col-form-label" for="m-id">ID</label>
+                        <label class="mb-3 col-3 col-form-label" for="mId">ID</label>
                         <div class="col-9">
-                            <input class="form-control" id="m-id" name="m-id" type="text" required>
+                            <input class="form-control" id="mId" name="mId" type="text" required>
                         </div>
-                        <label class="mb-3 col-3 col-form-label" for="m-pwd">PASSWORD</label>
+                        <label class="mb-3 col-3 col-form-label" for="mPwd">PASSWORD</label>
                         <div class="col-9">
-                            <input class="form-control" id="m-pwd" name="m-pwd" type="password" required>
+                            <input class="form-control" id="mPwd" name="mPwd" type="password" required>
                         </div>
                     </div>
                     <div class="row mx-2">

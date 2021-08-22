@@ -31,13 +31,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cc9d628-89ff-442d-ba26-1b95f64ede5f" name="Default Changelist" comment="add mybatis file">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/puppyYanolja_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/puppyYanolja_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/puppyYanolja.iml" beforeDir="false" afterPath="$PROJECT_DIR$/puppyYanolja.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/common/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/common/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shopItem/service/shop-item-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shopItem/service/shop-item-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/memberIdCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/memberIdCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/memberSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/memberSignup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/service/MemberServiceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/service/MemberServiceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/service/member-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/service/member-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shopItem/service/ShopItemServiceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shopItem/service/ShopItemServiceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shoporder/service/ShopOrderServiceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shoporder/service/ShopOrderServiceMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/loginForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/loginForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/signUpForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/signUpForm.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +291,7 @@
       <workItem from="1629525266258" duration="3597000" />
       <workItem from="1629529188332" duration="16030000" />
       <workItem from="1629564401206" duration="15107000" />
-      <workItem from="1629613504030" duration="2389000" />
+      <workItem from="1629613504030" duration="7723000" />
     </task>
     <task id="LOCAL-00001" summary="add mybatis file">
       <created>1629532380012</created>
@@ -337,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629612882646</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix DataSource.java">
+      <created>1629616005353</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629616005353</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +389,8 @@
     <MESSAGE value="add mybatis files" />
     <MESSAGE value="edit gitignore" />
     <MESSAGE value="edit login and sighup" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit login and sighup" />
+    <MESSAGE value="fix DataSource.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix DataSource.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1629441099485">
@@ -416,62 +429,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1629557558335" />
-    <state width="1209" height="220" key="GridCell.Tab.0.bottom" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.0.bottom" timestamp="1629621517694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.0.center" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629621517694" />
+    <state width="1209" height="220" key="GridCell.Tab.0.center" timestamp="1629621517694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.0.left" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1629621517694" />
+    <state width="1209" height="220" key="GridCell.Tab.0.left" timestamp="1629621517694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.0.right" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1629621517694" />
+    <state width="1209" height="220" key="GridCell.Tab.0.right" timestamp="1629621517694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.1.bottom" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1629621517694" />
+    <state width="1209" height="220" key="GridCell.Tab.1.bottom" timestamp="1629621517697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.1.center" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629621517697" />
+    <state width="1209" height="220" key="GridCell.Tab.1.center" timestamp="1629621517694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.1.left" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1629621517694" />
+    <state width="1209" height="220" key="GridCell.Tab.1.left" timestamp="1629621517694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.1.right" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1629621517694" />
+    <state width="1209" height="220" key="GridCell.Tab.1.right" timestamp="1629621517697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.2.bottom" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1629621517697" />
+    <state width="1209" height="220" key="GridCell.Tab.2.bottom" timestamp="1629621517699">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.2.center" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629621517699" />
+    <state width="1209" height="220" key="GridCell.Tab.2.center" timestamp="1629621517698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.2.left" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1629621517698" />
+    <state width="1209" height="220" key="GridCell.Tab.2.left" timestamp="1629621517698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
-    <state width="1209" height="220" key="GridCell.Tab.2.right" timestamp="1629615620591">
+    <state width="1209" height="220" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1629621517698" />
+    <state width="1209" height="220" key="GridCell.Tab.2.right" timestamp="1629621517698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1209" height="220" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1629615620591" />
+    <state width="1209" height="220" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1629621517698" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1629563725870">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1629563725870" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1629612892713">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1629619074277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1629612892713" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1629619074277" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1629616011233">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1629616011233" />
     <state x="539" y="124" key="git4idea.branch.GitSmartOperationDialog" timestamp="1629612611956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
