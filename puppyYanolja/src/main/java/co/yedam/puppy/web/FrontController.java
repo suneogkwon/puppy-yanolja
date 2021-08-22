@@ -51,7 +51,7 @@ public class FrontController extends HttpServlet {
 		map.put("/loginForm.do", new LoginForm());
 		map.put("/logout.do", new Logout());
 		map.put("/memberSignUpForm.do", new memberSignUpForm());
-		map.put("/memberSignUp.do", null);
+		map.put("/memberSignUp.do", new memberSignup());
 		map.put("/memberSignOutForm.do", null);
 		map.put("/memberSignOut.do", null);
 		map.put("/partnerSignUpForm.do", null);

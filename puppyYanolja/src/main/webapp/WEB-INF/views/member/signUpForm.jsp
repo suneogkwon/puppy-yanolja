@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="container">
     <div id="signUpFormWapper" class="w-50 mx-auto border border-primary my-5 bg-white shadow-sm">
-        <form class="p-3" id="signUpForm" name="signUpForm" action="signUp.do" method="post" onsubmit="frmCheck(this)">
+        <form class="p-3" id="signUpForm" name="signUpForm" action="memberSignUp.do" method="post" onsubmit="frmCheck(this)">
             <h3 class="text-center py-4 fw-bold text-primary border-bottom">일반 회원가입</h3>
             <div class="row py-4 px-2 gy-3">
                 <input type="hidden" id="idChkFlag" value="0">
@@ -115,7 +115,7 @@ o 로그 기록
             return false;
         }
 
-
+        return true;
     }
 
     function idCheck(id) {
