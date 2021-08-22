@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* 공통 */
+
 /* 헤더 관련 */
 #headerLogo {height:170px;}
 
@@ -12,6 +14,8 @@
 #recCafeMainList .review-score-bg{display:inline-block; width:75px; height:15px; background:url(../img/review_emptystar.png) repeat-x left/15px}
 #bestHotelMainList .review-score-bg .review-score,
 #recCafeMainList .review-score-bg .review-score{display:inline-block; width:80%; height:15px; background:url(../img/review_star.png) repeat-x left/15px}
+
+/*#loginWrapper { width:500px;}*/
 
 .review_star {
 	width: 20px;

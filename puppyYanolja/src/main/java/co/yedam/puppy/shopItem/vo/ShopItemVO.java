@@ -15,5 +15,86 @@ public class ShopItemVO {
 	
 	private String mainImg; // 상품 메인 이미지 
 	private String subImg;  // 상품 상세 이미지
-	private int reviewNo;   // 후기
+	
+	public ShopItemVO() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public int getItNo() {
+		return itNo;
+	}
+	public void setItNo(int itNo) {
+		this.itNo = itNo;
+	}
+	public int getShopNo() {
+		return shopNo;
+	}
+	public void setShopNo(int shopNo) {
+		this.shopNo = shopNo;
+	}
+	public String getItName() {
+		return itName;
+	}
+	public void setItName(String itName) {
+		this.itName = itName;
+	}
+	public String getItBrand() {
+		return itBrand;
+	}
+	public void setItBrand(String itBrand) {
+		this.itBrand = itBrand;
+	}
+	public String getItCategory() {
+		return itCategory;
+	}
+	public void setItCategory(String itCategory) {
+		this.itCategory = itCategory;
+	}
+	public String getItExplanText() {
+		return itExplanText;
+	}
+	public void setItExplanText(String itExplanText) {
+		this.itExplanText = itExplanText;
+	}
+	public int getCustPrice() {
+		return custPrice;
+	}
+	public void setCustPrice(int custPrice) {
+		this.custPrice = custPrice;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getSaveMoney() {
+		return saveMoney;
+	}
+	public void setSaveMoney(int saveMoney) {
+		this.saveMoney = saveMoney;
+	}
+	public int getShippingCharge() {
+		return shippingCharge;
+	}
+	public void setShippingCharge(int shippingCharge) {
+		this.shippingCharge = shippingCharge;
+	}
+	public String getMainImg() {
+		return mainImg;
+	}
+	public void setMainImg(String mainImg) {
+		this.mainImg = mainImg;
+	}
+	public String getSubImg() {
+		return subImg;
+	}
+	public void setSubImg(String subImg) {
+		this.subImg = subImg;
+	}
+
+	
+	
+	
 }

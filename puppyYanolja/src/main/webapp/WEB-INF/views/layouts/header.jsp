@@ -8,15 +8,39 @@
             <div class="col-12 col-md-9">
                 <nav class="nav justify-content-end fw-bold">
                     <c:if test="${not empty member}">
-                        <a href="logout.do" class="nav-link px-2">Logout</a>
-                        <a href="mypage.do" class="nav-link px-2">My page</a>
-                        <a href="wishlist.do" class="nav-link px-2">Wishlist</a>
+                        <a href="logout.do" class="nav-link">로그아웃</a>
+                        <a href="mypage.do" class="nav-link">마이페이지</a>
+                        <a href="wishlist.do" class="nav-link2">위시리스트</a>
                     </c:if>
                     <c:if test="${empty member}">
-                        <a href="login.do" class="nav-link px-2">Login</a>
-                        <a href="registerForm.do" class="nav-link px-2">Register</a>
+                        <a href="loginForm.do" class="nav-link">로그인</a>
+                        <a href="#signUpModal" class="nav-link" data-bs-toggle="modal">회원가입</a>
                     </c:if>
                 </nav>
+                <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="signUpModalLabel">회원가입</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6 text-end">
+                                        <a href="memberSignUpForm.do" class="btn btn-primary text-white w-75 py-4 shadow-sm">
+                                            <span class="h5 fw-bold m-0">일반</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="memberSignUpForm.do" class="btn btn-info text-white w-75 py-4 shadow-sm">
+                                            <span class="h5 fw-bold m-0">파트너</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-12 text-center position-relative">
             	<a href="home.do">
