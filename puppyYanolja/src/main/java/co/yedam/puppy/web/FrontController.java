@@ -12,13 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 
 import co.yedam.puppy.common.Command;
 import co.yedam.puppy.main.command.Home;
+import co.yedam.puppy.member.command.*;
 import co.yedam.puppy.shop.command.*;
 
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private HashMap<String, Command> map = new HashMap<String, Command>();
-    
-	
+
+
 	public FrontController() {
         super();
         // TODO Auto-generated constructor stub
@@ -30,12 +31,12 @@ public class FrontController extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		// 공통
 		map.put("/home.do", new Home());
-		
+
 		// 회원관련
-		map.put("/login.do", null);
-		map.put("/loginForm.do", null);
-		map.put("/logout.do", null);
-		map.put("/memberSignUpForm.do", null);
+		map.put("/login.do", new Login());
+		map.put("/loginForm.do", new LoginForm());
+		map.put("/logout.do", new Logout());
+		map.put("/memberSignUpForm.do", new memberSignUpForm());
 		map.put("/memberSignUp.do", null);
 		map.put("/memberSignOutForm.do", null);
 		map.put("/memberSignOut.do", null);
@@ -46,7 +47,8 @@ public class FrontController extends HttpServlet {
 		map.put("/myPage.do", null);
 		map.put("/myPageUpdateForm.do", null);
 		map.put("/myPageUpdate.do", null);
-		
+		map.put("/memberIdCheck.do", new memberIdCheck());
+
 		// 게시판관련
 		map.put("/boardList.do", null);
 		map.put("/boardInsertForm.do", null);
@@ -62,11 +64,11 @@ public class FrontController extends HttpServlet {
 		map.put("/commentUpdate.do", null);
 		map.put("/commentDelete.do", null);
 		map.put("/QnaInsert.do", null);
-		
+
 		// 서비스관련 (공통)
 		map.put("/reservationList.do", null);
 		map.put("/reservationView.do", null);
-		
+
 		// 서비스관련 (멤버)
 		map.put("/reservationForm.do", null);
 		map.put("/reservationWriteForm.do", null);
@@ -76,13 +78,13 @@ public class FrontController extends HttpServlet {
 		map.put("/reviewList.do", null);
 		map.put("/reviewInsertForm.do", null);
 		map.put("/reviewInsert.do", null);
-		
+
 		// 서비스관련 (파트너)
 		map.put("/reservationList.do", null);//
 		map.put("/reservationUpdateForm.do", null);
 		map.put("/reservationUpdate.do", null);
 		map.put("/reservationDelete.do", null);
-		
+
 		// 예약
 		map.put("/reservationSelectForm.do", new ReservationSelectForm());
 		map.put("/reservationSelectDetail.do", new ReservationSelectDetail());
@@ -100,22 +102,22 @@ public class FrontController extends HttpServlet {
 
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
-		
+
 		String uri = request.getRequestURI();
 		String context = request.getContextPath();
 		String path = uri.replace(context, "");
-		
+
 		Command command = map.get(path);
-		
+
 		String view = command.execute(request, response);
-		
-		if(view.startsWith("ajax:")) {	// ajax 데이터 처리
-			String data = view.replace("ajax:", "");
+
+		if(view.endsWith(".ajax")) {	// ajax 데이터 처리
+			String data = view.replace(".ajax", "");
 			response.getWriter().print(data);
 		} else if(view.endsWith(".do")) {
-			request.getRequestDispatcher(view).forward(request, response);
-		} else {	
-			view = view + ".tiles";
+			response.sendRedirect(view);
+		} else {
+			view += ".tiles";
 			request.getRequestDispatcher(view).forward(request, response);
 		}
 	}
