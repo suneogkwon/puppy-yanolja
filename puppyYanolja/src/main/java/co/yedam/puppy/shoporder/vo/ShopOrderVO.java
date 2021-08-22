@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class ShopOrderVO {
 
-	private int no;
+	private int odNo;
 	private int shopNo;			//업체 넘버
 	private int memberNo;			//회원 넘버
 	private String odEmail;		//주문자 이메일
