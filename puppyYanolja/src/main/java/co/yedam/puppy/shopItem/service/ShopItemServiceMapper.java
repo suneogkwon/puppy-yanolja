@@ -8,7 +8,7 @@ import co.yedam.puppy.shopItem.vo.ShopItemVO;
 
 public class ShopItemServiceMapper implements ShopItemService {
 
-	private SqlSession sqlSession = DataSource.getInstance().openSession(true);
+	private SqlSession sqlSession = DataSource.getSession();
     ShopItemService mapper = sqlSession.getMapper(ShopItemService.class);
 	
 	@Override
