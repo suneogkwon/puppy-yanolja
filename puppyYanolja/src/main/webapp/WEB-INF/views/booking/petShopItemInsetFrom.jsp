@@ -115,7 +115,7 @@
 				<div class="row">
 					<div class="col-3">대표 이미지(상품 썸네일)</div>
 					<div class="col-9">
-						<input type="file" id="mainImg" name="mainImg" size="60">
+						<input type="file" id="mainFile" name="mainFile" size="60">
 					</div>	
 				</div>
 			</div>
@@ -134,7 +134,7 @@
 				<div class="row">
 					<div class="col-3">상세 이미지</div>
 					<div class="col-9">
-						<input type="file" id="subImg" name="subImg" size="60">
+						<input type="file" id="subFile" name="subFile" size="60">
 					</div>	
 				</div>
 			</div>
@@ -150,8 +150,8 @@
 		<br><br>
 		<div class="row">
 			<div class="col-12 text-center">
-				<button class="btn btn-primary" type="submit">상품 등록</button>
-				<button class="btn btn-primary" type="reset">취소</button>
+				<input id="itemInsert" name="itemInsert" class="btn btn-primary" type="submit" value="등록">
+				<input id="itemInsert" name="itemInsert" class="btn btn-primary" type="reset" value="취소">
 			</div>
 		</div>
 	</form>

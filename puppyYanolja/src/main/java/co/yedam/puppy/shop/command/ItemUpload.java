@@ -4,8 +4,10 @@ import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import org.springframework.web.multipart.MultipartRequest;
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 import co.yedam.puppy.common.Command;
 import co.yedam.puppy.shopItem.service.ShopItemServiceMapper;
@@ -20,34 +22,39 @@ public class ItemUpload implements Command {
 		ShopItemServiceMapper ItemDao = new ShopItemServiceMapper();
 		ShopItemVO vo = new ShopItemVO();
 		
+		 HttpSession session = request.getSession();
 		int maxFileSize = 1024 *1024 * 200; //최대 파일 사이즈 100MB
 		
 		
 		try {
-			MultipartRequest part = new MultipartRequest(request, "c:/Temp/", maxFileSize, "utf-8", new DefaultFileRenamePolicy());
-
-			String upfileName = part.getFilesystemName("fileName") ; // 업로드한 파일명
-			String orgfileName = part.getOriginalFileName("fileName"); // 원래 파일명
+			MultipartRequest part = new MultipartRequest(request, session.getServletContext().getRealPath("/") + "/assets/img/booking/", maxFileSize, "utf-8", new DefaultFileRenamePolicy());
 			
+			String orgfileName = part.getFilesystemName("mainFile") ; // 업로드한 파일명
+			String upfileName = part.getOriginalFileName("mainFile"); // 원래 파일명
 			
-			vo.setShopNo(Integer.parseInt(request.getParameter("shopNo")));
-			vo.setItName(request.getParameter("itName"));
-			vo.setItBrand(request.getParameter("itBrand"));
-			vo.setItCategory(request.getParameter("itCategory"));
-			vo.setItExplanText(request.getParameter("itExplanText"));
-			vo.setCustPrice(Integer.parseInt(request.getParameter("custPrice")));
-			vo.setPrice(Integer.parseInt(request.getParameter("price")));
-			vo.setSaveMoney(Integer.parseInt(request.getParameter("saveMoney")));
-			vo.setShippingCharge(Integer.parseInt(request.getParameter("shippingCharge")));
+			String orgfileName2 = part.getFilesystemName("subFile") ; // 업로드한 파일명
+			String upfileName2 = part.getOriginalFileName("subFile"); // 원래 파일명			
 			
-			vo.setMainImg(orgfileName);
-			vo.setSubImg(orgfileName);
+			vo.setShopNo(Integer.parseInt(part.getParameter("shopNo")));
+			vo.setItName(part.getParameter("itName"));
+			vo.setItBrand(part.getParameter("itBrand"));
+			vo.setItCategory(part.getParameter("itCategory"));
+			vo.setItExplanText(part.getParameter("itExplanText"));
+			vo.setCustPrice(Integer.parseInt(part.getParameter("custPrice")));
+			vo.setPrice(Integer.parseInt(part.getParameter("price")));
+			vo.setSaveMoney(Integer.parseInt(part.getParameter("saveMoney")));
+			vo.setShippingCharge(Integer.parseInt(part.getParameter("shippingCharge")));
+			
+			vo.setMainFile(upfileName);
+			vo.setMainRealFile(orgfileName);
+			vo.setSubFile(upfileName2);
+			vo.setSubRealFile(orgfileName2);
 			
 			
 			
 			int n = ItemDao.shopItemInsert(vo);
 			if (n != 0) {
-				request.setAttribute("message", vo.getItName() + "파일업로드 성공!");
+				request.setAttribute("message", orgfileName + "파일업로드 성공!");
 			}else {
 				request.setAttribute("message", orgfileName + "파일업로드 실패..");
 			}
