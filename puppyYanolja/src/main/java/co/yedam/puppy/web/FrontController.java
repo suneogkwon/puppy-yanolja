@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import co.yedam.puppy.board.BoastInsertFormCmd;
 import co.yedam.puppy.board.command.BoardDeleteCmd;
 import co.yedam.puppy.board.command.BoardInsertCmd;
 import co.yedam.puppy.board.command.BoardInsertFormCmd;
@@ -17,6 +18,12 @@ import co.yedam.puppy.board.command.BoardListCmd;
 import co.yedam.puppy.board.command.BoardSelectCmd;
 import co.yedam.puppy.board.command.BoardUpdateCmd;
 import co.yedam.puppy.board.command.BoardUpdateFormCmd;
+import co.yedam.puppy.board.command.BoastDeleteCmd;
+import co.yedam.puppy.board.command.BoastInsertCmd;
+import co.yedam.puppy.board.command.BoastListCmd;
+import co.yedam.puppy.board.command.BoastSelectCmd;
+import co.yedam.puppy.board.command.BoastUpdateCmd;
+import co.yedam.puppy.board.command.BoastUpdateFormCmd;
 import co.yedam.puppy.board.command.CommentDeleteCmd;
 import co.yedam.puppy.board.command.CommentInsertCmd;
 import co.yedam.puppy.board.command.CommentInsertFormCmd;
@@ -80,6 +87,15 @@ public class FrontController extends HttpServlet {
 		map.put("/commentUpdateForm.do", new CommentUpdateFormCmd());
 		map.put("/commentUpdate.do", new CommentUpdateCmd());
 		map.put("/commentDelete.do", new CommentDeleteCmd());
+		
+		map.put("/boastList.do", new BoastListCmd());
+//		map.put("/boastInsertForm.do", new BoastInsertFormCmd());
+		map.put("/boastInsert.do", new BoastInsertCmd());
+		map.put("/boastDelete.do", new BoastDeleteCmd());
+		map.put("/boastUpdateForm.do", new BoastUpdateFormCmd());
+		map.put("/boastUpdate.do", new BoastUpdateCmd());
+		map.put("/boastSelect.do", new BoastSelectCmd());
+		
 		map.put("/qnaList.do", new QnaListCmd());
 		map.put("/qnaInsert.do", new QnaInsertCmd());
 		
