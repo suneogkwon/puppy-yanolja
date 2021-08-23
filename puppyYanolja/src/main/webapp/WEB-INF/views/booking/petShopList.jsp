@@ -35,7 +35,10 @@
 			<div class="tab-pane fade show active" id="nav-home" role="tabpanel"
 				aria-labelledby="nav-home-tab">
 				<div class="row gy-5 row-cols-2 row-cols-lg-4">
+				
 					<c:forEach var="list" items="${list}">
+						<form id="frm" name="frm" action="petShopProduct.do" method="post">
+						<input type="hidden" id="itNo" name="itNo" value="${list.itNo}">
 						<div class="col">
 							<div class="border">
 								<img class="img-fluid" src="assets/img/booking/${list.mainFile}"
@@ -45,14 +48,14 @@
 										<b>${list.itName}</b>
 									</h5>
 									<p>
-										<del class="text-black-50">${list.custPrice}</del>
-										&emsp;${list.price}
+										<del class="text-black-50">${list.custPrice}원</del>
+										&emsp;${list.price}원
 									</p>
-									<button type="button" class="btn btn-primary text-white"
-										onclick="location.href='petShopProduct.do'">구매하기</button>
+									<input type="submit" class="btn btn-primary text-white" value="구매하기">
 								</div>
 							</div>
 						</div>
+						</form>
 					</c:forEach>
 				</div>
 			</div>

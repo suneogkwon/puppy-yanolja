@@ -7,48 +7,55 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-12 col-md-9">
                 <nav class="nav justify-content-end fw-bold">
+
                     <c:if test="${not empty member}">
+                        <c:if test="${member.role == 'ADMIN'}">
+                            <a href="admin.do" class="nav-link">관리페이지</a>
+                        </c:if>
+                        <c:if test="${member.role == 'PARTNER'}">
+                            <a href="partner.do" class="nav-link">상점페이지</a>
+                        </c:if>
                         <a href="logout.do" class="nav-link">로그아웃</a>
-                        <a href="mypage.do" class="nav-link">마이페이지</a>
+                        <a href="myPage.do" class="nav-link">마이페이지</a>
                         <a href="wishlist.do" class="nav-link">위시리스트</a>
                     </c:if>
                     <c:if test="${empty member}">
                         <a href="loginForm.do" class="nav-link">로그인</a>
                         <a href="#signUpModal" class="nav-link" data-bs-toggle="modal">회원가입</a>
-                    </c:if>
-                </nav>
-                <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="signUpModalLabel">회원가입</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row g-0 justify-content-center text-center">
-                                    <div class="col-5">
-                                        <ul class="list-unstyled">
-                                            <li>일반 이용 고객</li>
-                                            <li>반려동물 등록 필수</li>
-                                        </ul>
-                                        <a href="memberSignUpForm.do" class="btn btn-primary text-white w-75 py-4 shadow-sm">
-                                            <span class="h5 fw-bold m-0">일반</span>
-                                        </a>
+                        <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="signUpModalLabel">회원가입</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="col-5">
-                                        <ul class="list-unstyled">
-                                            <li>상점 등록 고객</li>
-                                            <li>관리자 승인 필요</li>
-                                        </ul>
-                                        <a href="memberSignUpForm.do" class="btn btn-info text-white w-75 py-4 shadow-sm">
-                                            <span class="h5 fw-bold m-0">파트너</span>
-                                        </a>
+                                    <div class="modal-body">
+                                        <div class="row g-0 justify-content-center text-center">
+                                            <div class="col-5">
+                                                <ul class="list-unstyled">
+                                                    <li>일반 이용 고객</li>
+                                                    <li>반려동물 등록 필수</li>
+                                                </ul>
+                                                <a href="memberSignUpForm.do?signUpSort=BUYER" class="btn btn-primary text-white w-75 py-4 shadow-sm">
+                                                    <span class="h5 fw-bold m-0">일반</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-5">
+                                                <ul class="list-unstyled">
+                                                    <li>상점 등록 고객</li>
+                                                    <li>관리자 승인 필요</li>
+                                                </ul>
+                                                <a href="memberSignUpForm.do?signUpSort=PARTNER" class="btn btn-info text-white w-75 py-4 shadow-sm">
+                                                    <span class="h5 fw-bold m-0">파트너</span>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </c:if>
+                </nav>
             </div>
             <div class="col-12 text-center position-relative">
             	<a href="home.do">

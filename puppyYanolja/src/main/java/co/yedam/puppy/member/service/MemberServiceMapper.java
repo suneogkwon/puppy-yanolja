@@ -11,7 +11,6 @@ public class MemberServiceMapper {
     public Boolean login(MemberVO vo) {
         if(map.login(vo) == 0)  // 로그인 실패시
             return false;
-
         return true;
     }
 

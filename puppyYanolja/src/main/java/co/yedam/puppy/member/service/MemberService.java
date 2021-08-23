@@ -7,4 +7,5 @@ public interface MemberService {
     int signUp(MemberVO vo);
     MemberVO getData(MemberVO vo);
     int isMemberId(String id);
+    int isStateAllow(String id);
 }
