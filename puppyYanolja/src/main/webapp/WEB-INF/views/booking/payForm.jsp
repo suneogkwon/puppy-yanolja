@@ -161,7 +161,10 @@ ul.fit {
 		</form>
 	</div>
 
-	<div class="container p-3 my-3 border"></div>
+	<div class="container p-3 my-3 border">
+		<div class="container p-3 my-3 border" style="background-color: #f8f8f8">
+</div>
+</div>
 
 
 	<div class="container p-3 my-3 border">

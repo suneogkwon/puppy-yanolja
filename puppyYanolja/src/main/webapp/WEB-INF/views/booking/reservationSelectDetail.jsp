@@ -57,10 +57,17 @@
 
 .swiper-slide>img {
 	opacity: 0.4;
+	margin-bottom: 15px;
 }
 
 .swiper-slide>img:hover {
 	opacity: 1.0;
+}
+
+.theme{
+	font-size: 20px;
+	text-align: center;
+	color: #616161;
 }
 </style>
 <div class="container">
@@ -118,9 +125,9 @@
 			</button>
 		</div>
 		<div class="col-6 p-4 text-end">
-			<span class="badge rounded-pill bg-dark">Fackbook</span> <span
+			<span class="badge rounded-pill bg-dark">Facebook</span> <span
 				class="badge rounded-pill bg-dark">Twitter</span> <span
-				class="badge rounded-pill bg-dark">Instargram</span>
+				class="badge rounded-pill bg-dark">Instagram</span>
 		</div>
 	</div>
 	<!-- 체크인,체크아웃 -->
@@ -179,29 +186,50 @@
 					<div class="swiper-slide p-3">
 						<img src="assets/img/booking/ball-game.png" class="img-fluid"
 							alt="...">
+							<div class="theme">
+							<p>교육</p>
+							</div>
 					</div>
 					<div class="swiper-slide p-3">
 						<img src="assets/img/booking/beauty-saloon.png" class="img-fluid"
 							alt="...">
+							<div class="theme">
+							<p>미용</p>
+							</div>
 					</div>
 					<div class="swiper-slide p-3">
 						<img src="assets/img/booking/dog.png" class="img-fluid" alt="...">
+						<div class="theme">
+							<p>산책</p>
+							</div>
 					</div>
 					<div class="swiper-slide p-3">
 						<img src="assets/img/booking/dog-food.png" class="img-fluid"
 							alt="...">
+							<div class="theme">
+							<p>펫푸드</p>
+							</div>
 					</div>
 					<div class="swiper-slide p-3">
 						<img src="assets/img/booking/medical-report.png" class="img-fluid"
 							alt="...">
+							<div class="theme">
+							<p>진료</p>
+							</div>
 					</div>
 					<div class="swiper-slide p-3">
 						<img src="assets/img/booking/pet-shampoo.png" class="img-fluid"
 							alt="...">
+							<div class="theme">
+							<p>목욕</p>
+							</div>
 					</div>
 					<div class="swiper-slide p-3">
 						<img src="assets/img/booking/play-with-pet.png" class="img-fluid"
 							alt="...">
+							<div class="theme">
+							<p>애견관리사</p>
+							</div>
 					</div>
 				</div>
 				<div class="swiper-button-prev"></div>
