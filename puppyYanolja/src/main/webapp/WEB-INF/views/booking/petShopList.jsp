@@ -60,11 +60,86 @@
 				</div>
 			</div>
 			<!-- 사료 -->
-			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<div class="row gy-5 row-cols-2 row-cols-lg-4">
+				
+					<c:forEach var="list" items="${foodList}">
+						<form id="frm" name="frm" action="petShopProduct.do" method="post">
+						<input type="hidden" id="itNo" name="itNo" value="${list.itNo}">
+						<div class="col">
+							<div class="border">
+								<img class="img-fluid" src="assets/img/booking/${list.mainFile}"
+									alt="사료">
+								<div class="text-center p-2">
+									<h5>
+										<b>${list.itName}</b>
+									</h5>
+									<p>
+										<del class="text-black-50">${list.custPrice}원</del>
+										&emsp;${list.price}원
+									</p>
+									<input type="submit" class="btn btn-primary text-white" value="구매하기">
+								</div>
+							</div>
+						</div>
+						</form>
+					</c:forEach>
+				</div>
+			</div>
   			<!-- 간식 -->
-  			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+  			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+  				<div class="row gy-5 row-cols-2 row-cols-lg-4">
+				
+					<c:forEach var="list" items="${snackList}">
+						<form id="frm" name="frm" action="petShopProduct.do" method="post">
+						<input type="hidden" id="itNo" name="itNo" value="${list.itNo}">
+						<div class="col">
+							<div class="border">
+								<img class="img-fluid" src="assets/img/booking/${list.mainFile}"
+									alt="사료">
+								<div class="text-center p-2">
+									<h5>
+										<b>${list.itName}</b>
+									</h5>
+									<p>
+										<del class="text-black-50">${list.custPrice}원</del>
+										&emsp;${list.price}원
+									</p>
+									<input type="submit" class="btn btn-primary text-white" value="구매하기">
+								</div>
+							</div>
+						</div>
+						</form>
+					</c:forEach>
+				</div>
+  			</div>
   			<!-- 용품 -->
-  			<div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab">...</div>
+  			<div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab">
+  				<div class="row gy-5 row-cols-2 row-cols-lg-4">
+				
+					<c:forEach var="list" items="${productList}">
+						<form id="frm" name="frm" action="petShopProduct.do" method="post">
+						<input type="hidden" id="itNo" name="itNo" value="${list.itNo}">
+						<div class="col">
+							<div class="border">
+								<img class="img-fluid" src="assets/img/booking/${list.mainFile}"
+									alt="사료">
+								<div class="text-center p-2">
+									<h5>
+										<b>${list.itName}</b>
+									</h5>
+									<p>
+										<del class="text-black-50">${list.custPrice}원</del>
+										&emsp;${list.price}원
+									</p>
+									<input type="submit" class="btn btn-primary text-white" value="구매하기">
+								</div>
+							</div>
+						</div>
+						</form>
+					</c:forEach>
+				</div>
+  			</div>
 		</div>
 	</div>
 
