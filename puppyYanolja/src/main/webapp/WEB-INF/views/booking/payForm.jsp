@@ -224,9 +224,17 @@ ul.fit {
 			<input class="form-check-input" type="checkbox" value=""
 				id="defaultCheck1"> <label class="form-check-label"
 				for="defaultCheck1"> [필수] 만 14세 이상 이용 동의 </label>
-
 		</div>
 	</div>
+
+
+	<script>
+    if($("input:checkbox[id='defaultCheck1']").is(":checked") != true){
+        alert('약관동의에 체크해 주세요');
+        return;
+    }}
+</script>
+
 
 	<div class="d-grid gap-2">
 
