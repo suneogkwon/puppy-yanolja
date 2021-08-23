@@ -4,4 +4,12 @@
     <select id="shopList" resultType="ShopVO">
         SELECT * FROM shop WHERE category_no = (SELECT no FROM category WHERE title = ${category})
     </select>
+    
+    <insert id="shopInsert" parameterType="ShopVO">
+    	insert into shop values (
+    	SHOP_SEQ.nextval,#{companyOwner},#{companyName},#{saupjaNo},#{companyTel},#{companyZip},
+    	#{companyAddr}, #{bankName},#{bankNumber},#{bankOwnerName},
+    	#{memberNo},#{categoryNo},#{locationNo},#{mainFile},#{subFile}
+    	)
+    </insert>
 </mapper>

@@ -45,6 +45,8 @@ public class FrontController extends HttpServlet {
 		map.put("/myPageUpdateForm.do", new MyPageUpdateForm());
 		map.put("/myPageUpdate.do", new MyPageUpdate());
 		map.put("/memberIdCheck.do", new MemberIdCheck());
+		map.put("/partnerShopAddForm.do", new PartnerShopAddForm());
+		map.put("/partnerShopInsert.do", new PartnerShopInsert());
 
 		// 게시판관련
 		map.put("/boardList.do", new BoardListCmd());

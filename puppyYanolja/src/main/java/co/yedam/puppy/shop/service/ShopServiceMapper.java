@@ -13,4 +13,10 @@ public class ShopServiceMapper {
     public List<ShopVO> shopList(String category){
         return map.shopList(category);
     }
+    
+    public int shopInsert(ShopVO vo){
+        return map.shopInsert(vo);
+    }
+    
+    
 }
