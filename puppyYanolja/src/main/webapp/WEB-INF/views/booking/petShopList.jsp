@@ -48,8 +48,8 @@
 										<b>${list.itName}</b>
 									</h5>
 									<p>
-										<del class="text-black-50">${list.custPrice}</del>
-										&emsp;${list.price}
+										<del class="text-black-50">${list.custPrice}원</del>
+										&emsp;${list.price}원
 									</p>
 									<input type="submit" class="btn btn-primary text-white" value="구매하기">
 								</div>

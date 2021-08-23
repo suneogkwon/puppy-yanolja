@@ -15,7 +15,6 @@ public class PetShopProduct implements Command {
 		ShopItemServiceMapper ItemDao = new ShopItemServiceMapper();
 		ShopItemVO vo = new ShopItemVO();
 		
-		System.out.println("fff"+request.getParameter("itNo"));
 		int itNo = Integer.parseInt(request.getParameter("itNo"));
 		vo.setItNo(itNo);
 		request.setAttribute("list", ItemDao.shopItemSelect(vo));

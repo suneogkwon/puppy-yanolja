@@ -42,7 +42,7 @@
 				<div class="col-9">
 					<h4>
 						<del class="text-black-50">${list.custPrice }원</del>
-						&emsp;${list.Price }원
+						&emsp;${list.price }원
 					</h4>
 				</div>
 			</div>
