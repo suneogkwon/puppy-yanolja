@@ -16,6 +16,8 @@ public class Login implements Command {
         String id = request.getParameter("mId");
         String pwd = request.getParameter("mPwd");
         MemberVO vo = new MemberVO();
+        String page = "member/loginForm";
+
         vo.setId(id);
         try {
             vo.setPassword(new Sha256().encrypt(pwd));
@@ -25,12 +27,12 @@ public class Login implements Command {
 
         if(map.login(vo)){
             request.getSession().setAttribute("member", map.getData(vo));
-            map.closeSession();
-            return "home.do";
+            page = "home.do";
+        } else{
+            String msg = "아이디 또는 비밀번호가 일치하지 않습니다.";
+            request.setAttribute("msg",msg);
         }
-        String msg = "아이디 또는 비밀번호가 일치하지 않습니다.";
-        request.setAttribute("msg",msg);
         map.closeSession();
-        return "member/loginForm";
+        return page;
     }
 }

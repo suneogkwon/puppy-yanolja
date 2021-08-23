@@ -60,4 +60,7 @@
 			</tr>
 		</tbody>
 	</table>
+	<div align="right">
+	<input type="submit" value="글쓰기">
+</div>
 </div>
