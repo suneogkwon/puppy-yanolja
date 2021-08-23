@@ -9,28 +9,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.security.NoSuchAlgorithmException;
 
-public class Login implements Command {
+public class MemberSignup implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         MemberServiceMapper map = new MemberServiceMapper();
-        String id = request.getParameter("mId");
-        String pwd = request.getParameter("mPwd");
         MemberVO vo = new MemberVO();
-        vo.setId(id);
+        String pwd = request.getParameter("mPwd");
         try {
             vo.setPassword(new Sha256().encrypt(pwd));
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
+        vo.setId(request.getParameter("mId"));
+        vo.setName(request.getParameter("mName"));
+        vo.setHp(request.getParameter("mHp"));
+        vo.setEmail(request.getParameter("mEmail"));
 
-        if(map.login(vo)){
+        if(map.signUp(vo)) {
             request.getSession().setAttribute("member", map.getData(vo));
             map.closeSession();
-            return "home.do";
+            return "member/signUpCong";
         }
-        String msg = "아이디 또는 비밀번호가 일치하지 않습니다.";
-        request.setAttribute("msg",msg);
-        map.closeSession();
-        return "member/loginForm";
+        return "home";
     }
 }
