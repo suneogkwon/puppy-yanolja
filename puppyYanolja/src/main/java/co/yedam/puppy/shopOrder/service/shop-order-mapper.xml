@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="co.yedam.puppy.shopOrder.service.ShopOrderService">
+
+	<!-- 전체 주문 리스트 샵넘버로 조회 -->
+	<select id="shopOrderList"
+		resultType="co.yedam.puppy.shopOrder.vo.ShopOrderVO">
+		SELECT * FROM shop_order where shop_no = #{shopNo}
+	</select>
+
+	<!-- 전체 주문 리스트 멤버로 조회 -->
+	<select id="shopOrderListMember"
+		resultType="co.yedam.puppy.shopOrder.vo.ShopOrderVO">
+		SELECT * FROM shop_order where member_no = #{memberNo}
+	</select>
+
+	<!-- 주문 한건 조회 -->
+	<select id="shopOrderSelect" parameterType="co.yedam.puppy.shopOrder.vo.ShopOrderVO" resultType="co.yedam.puppy.shopOrder.vo.ShopOrderVO">
+		SELECT * FROM shop_order where shop_no = ? and od_no = ?
+	</select>
+
+	<!-- 주문 등록 -->
+	<insert id="shopOrderInsert"
+		parameterType="co.yedam.puppy.shopOrder.vo.ShopOrderVO">
+		insert into shop_order values(
+		order_seq.NEXTVAL, shop_no, member_no, od_email, od_tel, od_deposit_name
+		od_memo, od_price, od_checkout_date, od_checkin_date, od_time
+		)
+	</insert>
+
+	<!-- 주문 수정 -->
+	<update id="shopOrderUpdate"
+		parameterType="co.yedam.puppy.shopOrder.vo.ShopOrderVO">
+		update shop_order set od_email, od_tel, od_deposit_name, od_memo,
+		od_checkout_date, od_checkin_date
+		where od_no = ?
+	</update>
+
+	<!-- 주문 삭제 -->
+	<delete id="shopOrderDelete"
+		parameterType="co.yedam.puppy.shopOrder.vo.ShopOrderVO">
+		delete from shop_order
+		where od_no = #{odNo}
+	</delete>
+
+</mapper>

@@ -16,6 +16,8 @@ public class Login implements Command {
         String id = request.getParameter("mId");
         String pwd = request.getParameter("mPwd");
         MemberVO vo = new MemberVO();
+        String page = "member/loginForm";
+
         vo.setId(id);
         try {
             vo.setPassword(new Sha256().encrypt(pwd));
@@ -23,7 +25,6 @@ public class Login implements Command {
             e.printStackTrace();
         }
 
-        String page = "member/loginForm";
         if(map.login(vo)){
             request.getSession().setAttribute("member", map.getData(vo));
             page = "home.do";

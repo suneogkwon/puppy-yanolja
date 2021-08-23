@@ -9,6 +9,7 @@ public class MemberVO {
     private String hp;
     private int bookingCount;
     private String state;
+    private String role;
     private int wishlistNo; // 1:1
 
     public MemberVO() {
@@ -84,5 +85,13 @@ public class MemberVO {
 
     public void setWishlistNo(int wishlistNo) {
         this.wishlistNo = wishlistNo;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

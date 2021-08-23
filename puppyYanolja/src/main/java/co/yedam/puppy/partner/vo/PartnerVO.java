@@ -2,14 +2,9 @@ package co.yedam.puppy.partner.vo;
 
 public class PartnerVO {
     private int no;
-    private String id;
-    private String password;
-    private String name;
-    private String email;
-    private String hp;
     private String tel;
     private int sellingCount;
-    private String state;
+    private int memberNo; // 1:1
 
     public PartnerVO() {
     }
@@ -20,46 +15,6 @@ public class PartnerVO {
 
     public void setNo(int no) {
         this.no = no;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getHp() {
-        return hp;
-    }
-
-    public void setHp(String hp) {
-        this.hp = hp;
     }
 
     public String getTel() {
@@ -78,11 +33,11 @@ public class PartnerVO {
         this.sellingCount = sellingCount;
     }
 
-    public String getState() {
-        return state;
+    public int getMemberNo() {
+        return memberNo;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setMemberNo(int memberNo) {
+        this.memberNo = memberNo;
     }
 }
