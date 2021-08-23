@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.stereotype.Service;
+
 import co.yedam.puppy.board.command.BoardDeleteCmd;
 import co.yedam.puppy.board.command.BoardInsertCmd;
 import co.yedam.puppy.board.command.BoardInsertFormCmd;
