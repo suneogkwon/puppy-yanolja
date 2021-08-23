@@ -27,6 +27,11 @@ import co.yedam.puppy.board.command.QnaInsertCmd;
 import co.yedam.puppy.common.Command;
 import co.yedam.puppy.main.command.Home;
 import co.yedam.puppy.member.command.*;
+import co.yedam.puppy.partner.command.PartnerPage;
+import co.yedam.puppy.partner.command.PartnerPageUpdate;
+import co.yedam.puppy.partner.command.PartnerPageUpdateForm;
+import co.yedam.puppy.partner.command.PartnerSignUp;
+import co.yedam.puppy.partner.command.PartnerSignUpForm;
 import co.yedam.puppy.shop.command.*;
 
 public class FrontController extends HttpServlet {
@@ -50,18 +55,21 @@ public class FrontController extends HttpServlet {
 		map.put("/login.do", new Login());
 		map.put("/loginForm.do", new LoginForm());
 		map.put("/logout.do", new Logout());
-		map.put("/memberSignUpForm.do", new memberSignUpForm());
-		map.put("/memberSignUp.do", new memberSignup());
+		map.put("/memberSignUpForm.do", new MemberSignUpForm());
+		map.put("/memberSignUp.do", new MemberSignup());
 		map.put("/memberSignOutForm.do", null);
 		map.put("/memberSignOut.do", null);
-		map.put("/partnerSignUpForm.do", null);
-		map.put("/partnerSignUp.do", null);
+		map.put("/partnerSignUpForm.do", new PartnerSignUpForm());
+		map.put("/partnerSignUp.do", new PartnerSignUp());
 		map.put("/partnerSignOutForm.do", null);
 		map.put("/partnerSignOut.do", null);
-		map.put("/myPage.do", null);
-		map.put("/myPageUpdateForm.do", null);
-		map.put("/myPageUpdate.do", null);
-		map.put("/memberIdCheck.do", new memberIdCheck());
+		map.put("/myPage.do", new MyPage());
+		map.put("/myPageUpdateForm.do", new MyPageUpdateForm());
+		map.put("/myPageUpdate.do", new MyPageUpdate());
+		map.put("/partnerPage.do", new PartnerPage());
+		map.put("/partnerPageUpdateForm.do", new PartnerPageUpdateForm());
+		map.put("/partnerPageUpdate.do", new PartnerPageUpdate());
+		map.put("/memberIdCheck.do", new MemberIdCheck());
 
 		// 게시판관련
 		map.put("/boardList.do", new BoardListCmd());

@@ -99,6 +99,7 @@ o 로그 기록
 <script>
     $(function () {
         $('#mPwdChk').on('change', pwdChk);
+        $('#mPwd').on('change', pwdChk);
         $('#mId').on('change', () => {
             idChkFlag.value = 0;
             $('#mId').removeClass('is-valid');
@@ -144,7 +145,6 @@ o 로그 기록
 
     function pwdChk() {
         let pwd = $('#mPwd');
-        ;
         let rpwd = $('#mPwdChk');
         let result = $('#pwdChkText');
 

@@ -11,8 +11,6 @@
 	<c:if test="${empty pageTitle}">강아지야놀자</c:if>
 </title>
 
-<link rel="stylesheet" href="assets/css/app.css">
-<script src="assets/js/app.js"></script>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <script src="assets/js/bootstrap.bundle.js"></script>
 
@@ -27,6 +25,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/app.css">
+<script src="assets/js/app.js"></script>
 </head>
 <body>
 	<tiles:insertAttribute name="header" />
