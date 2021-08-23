@@ -119,14 +119,14 @@ ul.fit {
 				<div style="width: 100%">
 					<div class="css-cssveg">
 						<label for="inputKG" class="form-label"></label> 몸무게 <span
-							class="red">*</span><input type="text" placeholder="강아지 몸무게를 입력해주세요."
-							name="petInfo.kg" value="" autocorrect="off"
-							autocapitalize="none" class="css-1pfv6fx">
+							class="red">*</span><input type="text"
+							placeholder="강아지 몸무게를 입력해주세요." name="petInfo.kg" value=""
+							autocorrect="off" autocapitalize="none" class="css-1pfv6fx">
 					</div>
 					<input type="hidden" name="petInfo.kg" value="">
 				</div>
 			</div>
-			
+
 
 
 			<div class="css-g9ui5n">
@@ -162,10 +162,37 @@ ul.fit {
 	</div>
 
 	<div class="container p-3 my-3 border">
-		<div class="container p-3 my-3 border" style="background-color: #f8f8f8">
-</div>
-</div>
+		<div class="col-12" style="margin-top: 5px">
+			<h4>
+				<b>결제 수단 선택</b>
+			</h4>
 
+			<div class="container p-3 my-3 border" style="font-size:20px">
+				<div class="row">
+					<div class="col-6">
+						<div class="form-check">
+							<input class="form-check-input" style="margin-top: 6px" type="radio"
+								name="flexRadioDefault" id="flexRadioDefault2" checked>
+							<label class="form-check-label" for="flexRadioDefault2">
+								<img src="https://image6.yanolja.com/payment/tPcTwmhcSkNTjk4O"
+								alt="실시간계좌이체 아이콘" style="width: 40px;"> 계좌이체
+							</label>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-check">
+							<input class="form-check-input" style="margin-top: 6px" type="radio"
+								name="flexRadioDefault" id="flexRadioDefault2" checked>
+							<label class="form-check-label" for="flexRadioDefault2">
+								<img src="https://image6.yanolja.com/payment/SPAiBJQQVztxhFeq"
+								alt="카드 아이콘" style="width: 40px"> 신용카드
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="container p-3 my-3 border">
 		<div class="container p-3" style="background-color: #fef8f2;">

@@ -14,4 +14,66 @@ public class ShopOrderVO {
 	private Date odCheckoutDate;  //체크아웃 날짜
 	private Date odCheckinDate;	//체크인 날짜
 	private Date odTime;			//주문시간
+	public int getOdNo() {
+		return odNo;
+	}
+	public void setOdNo(int odNo) {
+		this.odNo = odNo;
+	}
+	public int getShopNo() {
+		return shopNo;
+	}
+	public void setShopNo(int shopNo) {
+		this.shopNo = shopNo;
+	}
+	public int getMemberNo() {
+		return memberNo;
+	}
+	public void setMemberNo(int memberNo) {
+		this.memberNo = memberNo;
+	}
+	public String getOdEmail() {
+		return odEmail;
+	}
+	public void setOdEmail(String odEmail) {
+		this.odEmail = odEmail;
+	}
+	public String getOdDepositName() {
+		return odDepositName;
+	}
+	public void setOdDepositName(String odDepositName) {
+		this.odDepositName = odDepositName;
+	}
+	public String getOdMemo() {
+		return odMemo;
+	}
+	public void setOdMemo(String odMemo) {
+		this.odMemo = odMemo;
+	}
+	public int getOdPrice() {
+		return odPrice;
+	}
+	public void setOdPrice(int odPrice) {
+		this.odPrice = odPrice;
+	}
+	public Date getOdCheckoutDate() {
+		return odCheckoutDate;
+	}
+	public void setOdCheckoutDate(Date odCheckoutDate) {
+		this.odCheckoutDate = odCheckoutDate;
+	}
+	public Date getOdCheckinDate() {
+		return odCheckinDate;
+	}
+	public void setOdCheckinDate(Date odCheckinDate) {
+		this.odCheckinDate = odCheckinDate;
+	}
+	public Date getOdTime() {
+		return odTime;
+	}
+	public void setOdTime(Date odTime) {
+		this.odTime = odTime;
+	}
+	
+	
 }
