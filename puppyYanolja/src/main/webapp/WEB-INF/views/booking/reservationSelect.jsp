@@ -12,31 +12,20 @@
 }
 
 .price_info {
-	font-size: 11px;
+	font-size: 13px;
 	font-weight: 400;
 }
 </style>
 <div class="container">
-	<p>
+	<br>
 	<h2>
 		<b>서울 강남/역삼/삼성</b>
 	</h2>
 	<div class="container p-3 my-3 border">
-		<div class="row">
-			<div class="col-12 text-end">
-				<b>주변 호텔 찾기</b>
-			</div>
-		</div>
+
 		<div class="row">
 
-
-
-			<div class="col-6 my-3">
-				<h4>
-					&nbsp&nbsp<b>지역 TOP</b>
-				</h4>
-			</div>
-			<div class="col-6 row text-end my-3">
+			<!-- <div class="col-12 row text-end my-3">
 				<div class="col-12">
 					<div class="dropdown">
 						<a class="btn btn-secondary dropdown-toggle" href="#"
@@ -51,9 +40,17 @@
 					</div>
 				</div>
 			</div>
+			 -->
+			 
+			<div class="col-12">
+				<h4>
+					&nbsp&nbsp<b>지역 TOP</b>
+				</h4>
+			</div>
+			
 
 			<div class="container overflow-hidden">
-				<div class="row gx-5">
+				<div class="row gx-5" style="margin-bottom: 25px; margin-top: 10px;">
 					<div class="col" >
 						<div class="card" >
 							<img src="assets/img/booking/room01.jpg" class="card-img-top"
@@ -72,13 +69,12 @@
 									<img src="assets/img/booking/review_halfstar.jpg"
 										class="review_star"> 4.5
 
-									<p class="card-text">Some quick example text to build on
-										the card title and make up the bulk of the card's content.</p>
-									<br> <br>
+									<p class="card-text"><br><br><br> <br></p>
+									
 									<div class="col-12 text-end">
 										<div class="price_info">체크인 | 09:00부터</div>
 										<h5>
-											<b>149,000원</b>
+											<del>215,000원</del> &nbsp <b>149,000원</b>
 										</h5>
 
 									</div>
@@ -104,13 +100,11 @@
 									<img src="assets/img/booking/review_halfstar.jpg"
 										class="review_star"> 4.5
 
-									<p class="card-text">Some quick example text to build on
-										the card title and make up the bulk of the card's content.</p>
-									<br> <br>
+									<p class="card-text"><br><br><br> <br></p>
 									<div class="col-12 text-end">
 										<div class="price_info">체크인 | 09:00부터</div>
 										<h5>
-											<b>149,000원</b>
+											<del>215,000원</del> &nbsp <b>149,000원</b>
 										</h5>
 
 									</div>
@@ -140,9 +134,7 @@
 									<img src="assets/img/booking/review_halfstar.jpg"
 										class="review_star"> 4.5
 
-									<p class="card-text">Some quick example text to build on
-										the card title and make up the bulk of the card's content.</p>
-									<br> <br>
+									<p class="card-text"><br><br><br> <br></p>
 									<div class="col-12 text-end">
 										<div class="price_info">체크인 | 09:00부터</div>
 										<h5>
@@ -171,9 +163,7 @@
 									<img src="assets/img/booking/review_halfstar.jpg"
 										class="review_star"> 4.5
 
-									<p class="card-text">Some quick example text to build on
-										the card title and make up the bulk of the card's content.</p>
-									<br> <br>
+									<p class="card-text"><br><br><br> <br></p>
 									<div class="col-12 text-end">
 
 										<div class="price_info">체크인 | 09:00부터</div>
@@ -206,9 +196,7 @@
 										<img src="assets/img/booking/review_halfstar.jpg"
 											class="review_star"> 4.5
 
-										<p class="card-text">Some quick example text to build on
-											the card title and make up the bulk of the card's content.</p>
-										<br> <br>
+										<p class="card-text"><br><br><br> <br></p>
 										<div class="col-12 text-end">
 											<div class="price_info">체크인 | 09:00부터</div>
 											<h5>
@@ -237,9 +225,7 @@
 										<img src="assets/img/booking/review_halfstar.jpg"
 											class="review_star"> 4.5
 
-										<p class="card-text">Some quick example text to build on
-											the card title and make up the bulk of the card's content.</p>
-										<br> <br>
+										<p class="card-text"><br><br><br> <br></p>
 										<div class="col-12 text-end">
 
 											<div class="price_info">체크인 | 09:00부터</div>
@@ -271,9 +257,7 @@
 											<img src="assets/img/booking/review_halfstar.jpg"
 												class="review_star"> 4.5
 
-											<p class="card-text">Some quick example text to build on
-												the card title and make up the bulk of the card's content.</p>
-											<br> <br>
+											<p class="card-text"><br><br><br> <br></p>
 											<div class="col-12 text-end">
 												<div class="price_info">체크인 | 09:00부터</div>
 												<h5>
@@ -302,9 +286,7 @@
 											<img src="assets/img/booking/review_halfstar.jpg"
 												class="review_star"> 4.5
 
-											<p class="card-text">Some quick example text to build on
-												the card title and make up the bulk of the card's content.</p>
-											<br> <br>
+										<p class="card-text"><br><br><br> <br></p>
 											<div class="col-12 text-end">
 
 												<div class="price_info">체크인 | 09:00부터</div>
