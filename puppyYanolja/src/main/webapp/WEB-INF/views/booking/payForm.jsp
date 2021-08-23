@@ -260,13 +260,7 @@ ul.fit {
 				 'phone':휴대폰소액결제
 				 */
 				merchant_uid : 'merchant_' + new Date().getTime(),
-				/*
-				 merchant_uid에 경우
-				 https://docs.iamport.kr/implementation/payment
-				 위에 url에 따라가시면 넣을 수 있는 방법이 있습니다.
-				 참고하세요.
-				 나중에 포스팅 해볼게요.
-				 */
+				
 				name : '주문명:결제테스트',
 				//결제창에서 보여질 이름
 				amount : 1000,
