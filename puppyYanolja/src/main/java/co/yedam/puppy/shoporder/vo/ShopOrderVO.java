@@ -14,6 +14,12 @@ public class ShopOrderVO {
 	private Date odCheckoutDate;  //체크아웃 날짜
 	private Date odCheckinDate;	//체크인 날짜
 	private Date odTime;			//주문시간
+
+	
+	public ShopOrderVO() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public int getOdNo() {
 		return odNo;
 	}
@@ -73,7 +79,6 @@ public class ShopOrderVO {
 	}
 	public void setOdTime(Date odTime) {
 		this.odTime = odTime;
-	}
-	
+	}	
 	
 }

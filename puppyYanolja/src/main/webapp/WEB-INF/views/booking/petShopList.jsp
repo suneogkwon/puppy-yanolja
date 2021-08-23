@@ -38,7 +38,7 @@
 					<c:forEach var="list" items="${list}">
 						<div class="col">
 							<div class="border">
-								<img class="img-fluid" src="assets/img/booking/${list.mainImg}"
+								<img class="img-fluid" src="assets/img/booking/${list.mainFile}"
 									alt="사료">
 								<div class="text-center p-2">
 									<h5>

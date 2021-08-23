@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="co.yedam.puppy.shopItem.service.ShopItemService">
-	
 
 	<!-- 전체 상품 리스트 조회 -->
 	<select id="shopItemList" resultType="ShopItemVO">
 		SELECT * FROM shop_item where shop_no = #{shopNo}
 	</select>
-	
+
 	<!-- 상품 한건 조회 -->
-	<select id="shopItemSelect" parameterType="ShopItemVO" 
+	<select id="shopItemSelect" parameterType="ShopItemVO"
 	resultType="ShopItemVO">
-		SELECT * FROM shop_item where it_no = {#itNo}
+		SELECT * FROM shop_item where it_no = #{itNo}
 	</select>
-	
+
 	<!-- 상품 등록 -->
 	<insert id="shopItemInsert" parameterType="ShopItemVO" >
-		insert into shop_item values(
-		item_seq.NEXTVAL,{#shopNo}, {#itNo}, {#itCategory}, {#itExplanText},{#custPrice},
-		{#price}, {#saveMoney}, {#shippingCharge}, {#mainImg}, {#subImg})
+		insert into shop_item values(item_seq.NEXTVAL, #{shopNo}, #{itName}, 
+		#{itBrand}, #{itCategory}, #{itExplanText}, #{custPrice},
+		#{price}, #{saveMoney}, #{shippingCharge}, #{mainFile}, #{subFile}, #{mainRealFile}, #{subRealFile} )
 	</insert>
-	
+
 	<!-- 상품 수정 -->
 	<update id="shopItemUpdate" parameterType="ShopItemVO">
 		update shop_item set it_name = {#itName} , it_category = {#itCategory} , it_explan_text = {#itExplanText} , cust_price = {#custPrice},
-		price = {#price} , save_money = {#saveMoney} , shipping_charge = {#shippingCharge} , main_img = {#mainImg} , sub_img = {#subImg} 
+		price = {#price} , save_money = {#saveMoney} , shipping_charge = {#shippingCharge} , main_img = {#mainImg} , sub_img = {#subImg}
 		where it_no = {#itNo}
 	</update>
-	
+
 	<!-- 상품 삭제 -->
 	<delete id="shopItemDelete" parameterType="ShopItemVO">
 		delete from shop_item where it_no = {#itNo}
 	</delete>
-	
+
 </mapper>
