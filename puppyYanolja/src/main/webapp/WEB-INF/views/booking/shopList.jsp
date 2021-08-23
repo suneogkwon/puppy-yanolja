@@ -1,8 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <div class="container">
     <div class="my-5">
+        <div class="border shadow bg-white rounded">
+            <div class="row">
 
+            </div>
+        </div>
     </div>
         <!-- 도시선택 -->
         <div class="row g-2">

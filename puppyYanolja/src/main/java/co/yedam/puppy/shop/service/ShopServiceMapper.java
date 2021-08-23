@@ -10,7 +10,7 @@ public class ShopServiceMapper {
     private SqlSession sqlSession = DataSource.getSession().openSession(true);
     private ShopService map = sqlSession.getMapper(ShopService.class);
 
-    public List<ShopVO> shopList(String sort){
-        return map.shopList(sort);
+    public List<ShopVO> shopList(String category){
+        return map.shopList(category);
     }
 }

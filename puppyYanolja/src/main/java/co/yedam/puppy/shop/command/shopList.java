@@ -12,9 +12,9 @@ public class shopList implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         ShopServiceMapper map = new ShopServiceMapper();
-        String sort = request.getParameter("sort");
-        List<ShopVO> shopList = map.shopList(sort);
-        request.setAttribute("List",shopList);
+//        String sort = request.getParameter("sort");
+//        List<ShopVO> shopList = map.shopList(sort);
+//        request.setAttribute("List",shopList);
 
         return "booking/shopList";
     }

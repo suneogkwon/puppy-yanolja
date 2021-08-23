@@ -28,11 +28,11 @@
 							<hr class="w-100">
 						</div>
 						<div class="col-6">
-							<a href="memberSignUpForm.do" class="btn btn-outline-secondary text-dark w-100">일반<br />회원가입
+							<a href="memberSignUpForm.do?signUpSort=BUYER" class="btn btn-outline-secondary text-dark w-100">일반<br />회원가입
 							</a>
 						</div>
 						<div class="col-6">
-							<a href="partnerSignUpForm.do" class="btn btn-outline-info text-dark w-100">파트너<br />회원가입
+							<a href="partnerSignUpForm.do?signUpSort=PARTNER" class="btn btn-outline-info text-dark w-100">파트너<br />회원가입
 							</a>
 						</div>
 					</div>
