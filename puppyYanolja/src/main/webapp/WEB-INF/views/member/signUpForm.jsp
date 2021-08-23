@@ -4,15 +4,18 @@
     <div id="signUpFormWapper" class="w-50 mx-auto border border-primary my-5 bg-white shadow-sm">
         <form class="p-3" id="signUpForm" name="signUpForm" action="memberSignUp.do" method="post" onsubmit="return frmCheck(this)">
             <h3 class="text-center py-4 fw-bold text-primary border-bottom">
-                <c:if test="${signUpSort == 'BUYER'}">
+                <c:if test="${param.get('signUpSort') == 'BUYER'}">
                     일반
+                </c:if>
+                <c:if test="${param.get('signUpSort') == 'PARTNER'}">
+                    파트너
                 </c:if>
                 회원가입
             </h3>
             <div class="row py-4 px-2 gy-3">
                 <input type="hidden" id="idChkFlag" value="0">
                 <input type="hidden" id="pwdChkFlag" value="0">
-                <input type="hidden" id="signUpSort" value="${param.get("signUpSort")}">
+                <input type="hidden" id="signUpSort" name="signUpSort" value="${param.get("signUpSort")}">
                 <div class="col-12">
                     <label for="mId" class="form-label">아이디</label>
                     <div class="input-group">

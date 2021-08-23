@@ -21,107 +21,36 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:feature-main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d29add62-0cb7-4915-9427-451796ada9bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/puppyYanolja_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/puppyYanolja_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spullara_mustache_java_compiler_0_8_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_12_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_ojdbc8_19_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_ons_19_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_oraclepki_19_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_osdt_cert_19_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_osdt_core_19_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_simplefan_19_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_ucp_19_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jboss_javassist_3_7_ga.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_2_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_api_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_autotag_core_runtime_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_compat_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_core_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_el_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_extras_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_freemarker_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_jsp_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_mvel_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_ognl_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_api_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_freemarker_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_jsp_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_mustache_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_servlet_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_servlet_wildcard_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_velocity_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_servlet_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_template_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_velocity_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mvel_mvel2_2_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__servlets_com_cos_05Nov2002.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/puppyYanolja.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/board/command/QnaListCmd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardInsertForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardUpdateForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/qnaList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/board/command/BoardInsertFormCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/board/command/BoardInsertFormCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/board/command/BoardUpdateFormCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/board/command/BoardUpdateFormCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/booking/vo/BookingVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/booking/vo/ShopVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/vo/ShopVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/vo/MemberVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/vo/MemberVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/command/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/command/LoginForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/command/Logout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/command/PartnerPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/command/PartnerPageUpdate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/command/PartnerPageUpdateForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/command/PartnerSignUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/command/PartnerSignUpForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/service/PartnerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/service/PartnerServiceMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/service/partner-mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/vo/PartnerVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/vo/PartnerVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/command/ItemUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/command/ItemUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shoporder/service/ShopOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shopOrder/service/ShopOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shoporder/service/ShopOrderServiceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shopOrder/service/ShopOrderServiceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shoporder/service/shop-order-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shopOrder/service/shop-order-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shoporder/vo/ShopOrderVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shopOrder/vo/ShopOrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/command/shopList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/command/shopView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/service/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/service/ShopServiceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/service/shop-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/vo/LocationVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/DB sql/category.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/DB sql/location.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/MemberSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/command/MemberSignup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/service/member-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/member/service/member-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/partner/vo/PartnerVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/vo/ShopVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/shop/vo/ShopVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/web/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/yedam/puppy/web/FrontController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/DB sql/member.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB sql/member.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/boardList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/booking/reservationSelectForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/booking/shopList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layouts/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/signUpCong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/signUpCong.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/signUpForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/signUpForm.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +64,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -160,17 +91,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="co.yedam.puppy.board.command" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\git\puppy-yanolja\puppyYanolja\src\main\webapp\WEB-INF\views\board" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="co.yedam.puppy.shop.command" />
+      <recent name="co.yedam.puppy.board.command" />
     </key>
   </component>
   <component name="RunManager">
@@ -324,8 +257,16 @@
       <option name="presentableId" value="Default" />
       <updated>1629695167977</updated>
       <workItem from="1629695173106" duration="1316000" />
-      <workItem from="1629696524340" duration="3891000" />
+      <workItem from="1629696524340" duration="8546000" />
     </task>
+    <task id="LOCAL-00001" summary="멤버 테이블 sql 수정 (role 추가)">
+      <created>1629701157738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629701157738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,77 +277,101 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature-main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="멤버 테이블 sql 수정 (role 추가)" />
+    <option name="LAST_COMMIT_MESSAGE" value="멤버 테이블 sql 수정 (role 추가)" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629697710981">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1629697710981" />
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1629696075049">
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1629704598895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1629696075049" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1629704598895" />
     <state x="689" y="158" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1629695253153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="158" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1040@0.0.1920.1040" timestamp="1629695253153" />
-    <state width="1293" height="243" key="GridCell.Tab.0.bottom" timestamp="1629697716946">
+    <state width="1293" height="243" key="GridCell.Tab.0.bottom" timestamp="1629703433722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716946" />
-    <state width="1293" height="243" key="GridCell.Tab.0.center" timestamp="1629697716946">
+    <state width="1293" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433722" />
+    <state width="1293" height="243" key="GridCell.Tab.0.center" timestamp="1629703433721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716946" />
-    <state width="1293" height="243" key="GridCell.Tab.0.left" timestamp="1629697716946">
+    <state width="1293" height="243" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433721" />
+    <state width="1293" height="243" key="GridCell.Tab.0.left" timestamp="1629703433721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716946" />
-    <state width="1293" height="243" key="GridCell.Tab.0.right" timestamp="1629697716946">
+    <state width="1293" height="243" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433721" />
+    <state width="1293" height="243" key="GridCell.Tab.0.right" timestamp="1629703433721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716946" />
-    <state width="1293" height="243" key="GridCell.Tab.1.bottom" timestamp="1629697716859">
+    <state width="1293" height="243" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433721" />
+    <state width="1293" height="243" key="GridCell.Tab.1.bottom" timestamp="1629703433722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716859" />
-    <state width="1293" height="243" key="GridCell.Tab.1.center" timestamp="1629697716859">
+    <state width="1293" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433722" />
+    <state width="1293" height="243" key="GridCell.Tab.1.center" timestamp="1629703433722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716859" />
-    <state width="1293" height="243" key="GridCell.Tab.1.left" timestamp="1629697716859">
+    <state width="1293" height="243" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433722" />
+    <state width="1293" height="243" key="GridCell.Tab.1.left" timestamp="1629703433722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716859" />
-    <state width="1293" height="243" key="GridCell.Tab.1.right" timestamp="1629697716859">
+    <state width="1293" height="243" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433722" />
+    <state width="1293" height="243" key="GridCell.Tab.1.right" timestamp="1629703433722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716859" />
-    <state width="1293" height="243" key="GridCell.Tab.2.bottom" timestamp="1629697716859">
+    <state width="1293" height="243" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433722" />
+    <state width="1293" height="243" key="GridCell.Tab.2.bottom" timestamp="1629703433723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716859" />
-    <state width="1293" height="243" key="GridCell.Tab.2.center" timestamp="1629697716859">
+    <state width="1293" height="243" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433723" />
+    <state width="1293" height="243" key="GridCell.Tab.2.center" timestamp="1629703433722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716859" />
-    <state width="1293" height="243" key="GridCell.Tab.2.left" timestamp="1629697716859">
+    <state width="1293" height="243" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433722" />
+    <state width="1293" height="243" key="GridCell.Tab.2.left" timestamp="1629703433722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716859" />
-    <state width="1293" height="243" key="GridCell.Tab.2.right" timestamp="1629697716859">
+    <state width="1293" height="243" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433722" />
+    <state width="1293" height="243" key="GridCell.Tab.2.right" timestamp="1629703433723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="243" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629697716859" />
+    <state width="1293" height="243" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629703433723" />
     <state x="760" y="131" key="SettingsEditor" timestamp="1629696829878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="131" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1629696829878" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1629701166618">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1629701166618" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1629703032625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1629703032625" />
   </component>
 </project>

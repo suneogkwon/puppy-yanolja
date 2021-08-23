@@ -64,8 +64,8 @@ public class FrontController extends HttpServlet {
 		map.put("/QnaInsert.do", new QnaInsertCmd());
 
 		// 서비스관련 (공통)
-		map.put("/reservationList.do", null);
-		map.put("/reservationView.do", null);
+		map.put("/shopList.do", new shopList());
+		map.put("/shopView.do", new shopView());
 
 		// 서비스관련 (멤버)
 		map.put("/reservationForm.do", null);

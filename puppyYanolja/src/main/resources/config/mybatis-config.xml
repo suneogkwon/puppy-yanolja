@@ -14,6 +14,7 @@
 			alias="MemberVO" />
 		<typeAlias type="co.yedam.puppy.shopItem.vo.ShopItemVO"
 			alias="ShopItemVO" />
+        <typeAlias type="co.yedam.puppy.shop.vo.ShopVO" alias="ShopVO"/>
 	</typeAliases>
 
 	<environments default="development">
@@ -31,5 +32,6 @@
 	<mappers>
 		<mapper resource="co/yedam/puppy/shopItem/service/shop-item-mapper.xml" />
 		<mapper resource="co/yedam/puppy/member/service/member-mapper.xml" />
+        <mapper resource="co/yedam/puppy/shop/service/shop-mapper.xml" />
 	</mappers>
 </configuration>

@@ -24,6 +24,12 @@ public class MemberSignup implements Command {
         vo.setName(request.getParameter("mName"));
         vo.setHp(request.getParameter("mHp"));
         vo.setEmail(request.getParameter("mEmail"));
+        if(request.getParameter("signUpSort").equals("PARTNER")){
+            vo.setState("P");
+        } else {
+            vo.setState("Y");
+        }
+        vo.setRole(request.getParameter("signUpSort"));
 
         if(map.signUp(vo)) {
             request.getSession().setAttribute("member", map.getData(vo));

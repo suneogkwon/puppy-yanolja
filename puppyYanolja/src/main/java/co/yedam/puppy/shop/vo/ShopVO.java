@@ -9,7 +9,6 @@ public class ShopVO {
 	private String companyTel;	  // 사업장 전화번호
 	private String companyZip;   // 사업장 우편번호
 	private String companyAddr;  // 사업장 주소
-	private int bankUse;		  // 사업장 은행 사용 여부
 	private String bankName; 	  // 은행이름
 	private String bankNumber;   // 계좌번호
 	private String bankOwnerName; // 예금주
