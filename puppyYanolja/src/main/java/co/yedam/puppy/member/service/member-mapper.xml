@@ -6,7 +6,7 @@
     </select>
     <insert id="signUp" parameterType="MemberVO">
         INSERT INTO member (no, id, password, name, email, hp, booking_count, state)
-        VALUES(MEMBER_SEQ.nextval, #{id}, #{password}, #{name}, #{email}, #{hp}, 0, 'Y')
+        VALUES(MEMBER_SEQ.nextval,#{id},#{password},#{name},#{email},#{hp},0,'Y')
     </insert>
     <select id="getData" parameterType="MemberVO" resultType="MemberVO">
         SELECT * FROM member WHERE id=#{id} AND password=#{password}

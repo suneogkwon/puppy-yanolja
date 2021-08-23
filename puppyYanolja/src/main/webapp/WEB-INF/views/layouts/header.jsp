@@ -10,7 +10,7 @@
                     <c:if test="${not empty member}">
                         <a href="logout.do" class="nav-link">로그아웃</a>
                         <a href="mypage.do" class="nav-link">마이페이지</a>
-                        <a href="wishlist.do" class="nav-link2">위시리스트</a>
+                        <a href="wishlist.do" class="nav-link">위시리스트</a>
                     </c:if>
                     <c:if test="${empty member}">
                         <a href="loginForm.do" class="nav-link">로그인</a>

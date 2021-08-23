@@ -12,12 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 public class memberIdCheck implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        MemberServiceMapper service = new MemberServiceMapper();
+        MemberServiceMapper map = new MemberServiceMapper();
         String id = request.getParameter("id");
         Gson gson = new GsonBuilder().create();
         JsonObject jo = new JsonObject();
 
-        if(service.isMemberId(id)){
+        if(map.isMemberId(id)){
             jo.addProperty("result","아이디가 존재합니다.");
             jo.addProperty("flag",0);
         } else {

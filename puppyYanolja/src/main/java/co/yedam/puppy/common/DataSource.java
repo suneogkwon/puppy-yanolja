@@ -4,19 +4,15 @@ package co.yedam.puppy.common;
 import java.io.InputStream;
 
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-
 import java.io.IOException;
-
-
 
 public class DataSource {
     private static SqlSessionFactory sqlSessionFactory;
 
-    private DataSource() {
+    public static SqlSessionFactory getSession(){
         String resource = "config/mybatis-config.xml";
         InputStream inputStream = null;
         try {
@@ -25,10 +21,8 @@ public class DataSource {
             e.printStackTrace();
         }
         sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-    }
 
-    public static SqlSession getSession(){
-        return sqlSessionFactory.openSession(true);
+        return sqlSessionFactory;
 
     }
 }
