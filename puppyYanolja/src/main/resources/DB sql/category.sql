@@ -42,3 +42,4 @@ Insert into DEMO.CATEGORY (NO,TITLE) values (CATEGORY_SEQ.nextval,'cafe');
 Insert into DEMO.CATEGORY (NO,TITLE) values (CATEGORY_SEQ.nextval,'shop');
 Insert into DEMO.CATEGORY (NO,TITLE) values (CATEGORY_SEQ.nextval,'park');
 Insert into DEMO.CATEGORY (NO,TITLE) values (CATEGORY_SEQ.nextval,'hospital');
+commit;
