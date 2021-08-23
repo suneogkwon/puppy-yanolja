@@ -24,6 +24,7 @@ import co.yedam.puppy.board.command.CommentListCmd;
 import co.yedam.puppy.board.command.CommentUpdateCmd;
 import co.yedam.puppy.board.command.CommentUpdateFormCmd;
 import co.yedam.puppy.board.command.QnaInsertCmd;
+import co.yedam.puppy.board.command.QnaListCmd;
 import co.yedam.puppy.common.Command;
 import co.yedam.puppy.main.command.HomeCmd;
 import co.yedam.puppy.shop.command.PetShopList;
@@ -79,7 +80,8 @@ public class FrontController extends HttpServlet {
 		map.put("/commentUpdateForm.do", new CommentUpdateFormCmd());
 		map.put("/commentUpdate.do", new CommentUpdateCmd());
 		map.put("/commentDelete.do", new CommentDeleteCmd());
-		map.put("/QnaInsert.do", new QnaInsertCmd());
+		map.put("/qnaList.do", new QnaListCmd());
+		map.put("/qnaInsert.do", new QnaInsertCmd());
 		
 		// �꽌鍮꾩뒪愿��젴 (怨듯넻)
 		map.put("/reservationList.do", null);

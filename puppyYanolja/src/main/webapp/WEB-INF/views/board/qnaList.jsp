@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <div class="container">
 <br/><br/>
-<h1 align="left">공지사항</h1>
+<h1 align="left">자주 묻는 질문(FAQ)</h1>
 
 <div align="right">
 <input type="text" name="keyWord">&nbsp;
@@ -60,7 +60,4 @@
 			</tr>
 		</tbody>
 	</table>
-	<div align="right">
-	<input type="submit" value="글쓰기">
-</div>
 </div>

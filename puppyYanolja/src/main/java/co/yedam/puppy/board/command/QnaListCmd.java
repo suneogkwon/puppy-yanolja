@@ -5,12 +5,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import co.yedam.puppy.common.Command;
 
-public class BoardUpdateFormCmd implements Command {
+public class QnaListCmd implements Command {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
-		return "board/boardUpdateForm";
+		return "board/qnaList";
 	}
 
 }
