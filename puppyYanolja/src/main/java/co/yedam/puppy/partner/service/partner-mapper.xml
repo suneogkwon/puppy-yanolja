@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="co.yedam.puppy.partner.service.PartnerService">
-
+    <select id="login" resultType="int" parameterType="MemberVO">
+        SELECT COUNT(*) FROM member WHERE id=#{id} AND password=#{password} AND state='Y'
+    </select>
+    <insert id="signUp" parameterType="MemberVO">
+        INSERT INTO member (no, id, password, name, email, hp, booking_count, state)
+        VALUES(MEMBER_SEQ.nextval,#{id},#{password},#{name},#{email},#{hp},0,'Y')
+    </insert>
+    <select id="getData" parameterType="MemberVO" resultType="MemberVO">
+        SELECT * FROM member WHERE id=#{id} AND password=#{password}
+    </select>
+    <select id="isMemberId" resultType="int" parameterType="string">
+        SELECT COUNT(*) FROM member WHERE id=#{id}
+    </select>
 </mapper>

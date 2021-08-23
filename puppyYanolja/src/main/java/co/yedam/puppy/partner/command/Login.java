@@ -1,9 +1,11 @@
-package co.yedam.puppy.member.command;
+package co.yedam.puppy.partner.command;
 
 import co.yedam.puppy.common.Command;
 import co.yedam.puppy.common.Sha256;
 import co.yedam.puppy.member.service.MemberServiceMapper;
 import co.yedam.puppy.member.vo.MemberVO;
+import co.yedam.puppy.partner.service.PartnerServiceMapper;
+import co.yedam.puppy.partner.vo.PartnerVO;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,10 +14,10 @@ import java.security.NoSuchAlgorithmException;
 public class Login implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        MemberServiceMapper map = new MemberServiceMapper();
+        PartnerServiceMapper map = new PartnerServiceMapper();
         String id = request.getParameter("mId");
         String pwd = request.getParameter("mPwd");
-        MemberVO vo = new MemberVO();
+        PartnerVO vo = new PartnerVO();
         vo.setId(id);
         try {
             vo.setPassword(new Sha256().encrypt(pwd));
@@ -23,15 +25,14 @@ public class Login implements Command {
             e.printStackTrace();
         }
 
-        String page = "member/loginForm";
         if(map.login(vo)){
-            request.getSession().setAttribute("member", map.getData(vo));
-            page = "home.do";
-        } else{
-            String msg = "아이디 또는 비밀번호가 일치하지 않습니다.";
-            request.setAttribute("msg",msg);
+            request.getSession().setAttribute("partner", map.getData(vo));
+            map.closeSession();
+            return "home.do";
         }
+        String msg = "아이디 또는 비밀번호가 일치하지 않습니다.";
+        request.setAttribute("msg",msg);
         map.closeSession();
-        return page;
+        return "member/loginForm";
     }
 }
