@@ -13,7 +13,7 @@
 	<div class="row p-4">
 		<div class="col-4">
 			<div class="border text-center">
-				<img class="img-fluid" src="assets/img/booking/product01.jpg"
+				<img class="img-fluid" src="assets/img/booking/${list.mainFile}"
 					alt="상품이미지">
 			</div>
 		</div>
@@ -27,9 +27,9 @@
 				</div>
 				<div class="col-9">
 					<h2>
-						<b>피부모질 닥터독 사료2kg</b>
+						<b>${list.itName }</b>
 					</h2>
-					<h6 class="text-black-50">맛있는 우리 아이 간식 NO.1 ! 최다구매율 제품 순위 1위</h6>
+					<h6 class="text-black-50">${list.itExplanText}</h6>
 				</div>
 			</div>
 			<p></p>
@@ -41,8 +41,8 @@
 				</div>
 				<div class="col-9">
 					<h4>
-						<del class="text-black-50">20,000원</del>
-						&emsp;18,500원
+						<del class="text-black-50">${list.custPrice }원</del>
+						&emsp;${list.Price }원
 					</h4>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 					<h6>적립금</h6>
 				</div>
 				<div class="col-9">
-					<h6>150원(1%)</h6>
+					<h6>${list.saveMoney}원(1%)</h6>
 				</div>
 			</div>
 			<p></p>
@@ -61,7 +61,7 @@
 					<h6>배송비</h6>
 				</div>
 				<div class="col-9">
-					<h6>2,500 원 (결제금액 3만원 이상 무료 배송)</h6>
+					<h6>${list.shippingCharge} 원 (결제금액 3만원 이상 무료 배송)</h6>
 				</div>
 			</div>
 			<p></p>
@@ -131,7 +131,7 @@
 			<!-- 상세페이지 -->
 			<div class="tab-pane fade show active text-center" id="home"
 				role="tabpanel" aria-labelledby="home-tab">
-				<img class="img-fluid" src="assets/img/booking/details_skin_01.jpg"
+				<img class="img-fluid" src="assets/img/booking/${list.subFile}"
 					alt="상품상세페이지">
 			</div>
 			<!-- 상품후기 -->

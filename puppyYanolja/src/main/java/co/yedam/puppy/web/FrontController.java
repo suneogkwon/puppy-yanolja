@@ -137,7 +137,7 @@ public class FrontController extends HttpServlet {
 		Command command = map.get(path);
 
 		String view = command.execute(request, response);
-
+		System.out.println(view);
 		if(view.endsWith(".ajax")) {	// ajax 데이터 처리
 			String data = view.replace(".ajax", "");
 			response.getWriter().print(data);

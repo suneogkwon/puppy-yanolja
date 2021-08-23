@@ -22,7 +22,7 @@ public class ItemUpload implements Command {
 		ShopItemServiceMapper ItemDao = new ShopItemServiceMapper();
 		ShopItemVO vo = new ShopItemVO();
 		
-		 HttpSession session = request.getSession();
+		HttpSession session = request.getSession();
 		int maxFileSize = 1024 *1024 * 200; //최대 파일 사이즈 100MB
 		
 		
