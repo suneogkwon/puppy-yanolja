@@ -1,7 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<br><br>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<style>
+	.link-secondary{
+		color:#333;
+	}
+	.link-secondary:hover {
+		color: #d79b70;
+	}
+</style>
+
 <div class="container">
+    <div class="my-5">
+        <div class="border shadow bg-white rounded">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
         <!-- 도시선택 -->
         <div class="row g-2">
            <div class="col-12">
@@ -133,7 +148,7 @@
                        <button class="accordion-button collapsed" type="button"
                           data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
                           aria-expanded="false" aria-controls="flush-collapseFour">
-                          충정</button>
+                          충청</button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse"
                        aria-labelledby="flush-headingFour"
@@ -361,7 +376,7 @@
                  </div>
               </div>
            </div>
-        </div>        
+        </div>
         <br>
         <br><br><br>
         <!-- 인기호텔 -->
@@ -406,7 +421,7 @@
         <div id="carouselMultiItemExample"
            class="carousel carousel-dark slide text-center"
            data-bs-ride="carousel">
-     
+
            <!-- Inner -->
            <div class="carousel-inner py-4">
               <!-- Single item -->
@@ -423,7 +438,7 @@
                              </div>
                           </div>
                        </div>
-     
+
                        <div class="col-lg-4 d-none d-lg-block">
                           <div class="card">
                              <img src="assets/img/booking/hotel02.jpg" class="card-img-top" alt="hotel02.jpg" />
@@ -434,7 +449,7 @@
                              </div>
                           </div>
                        </div>
-     
+
                        <div class="col-lg-4 d-none d-lg-block">
                           <div class="card">
                              <img src="assets/img/booking/hotel03.jpg" class="card-img-top" alt="..." />
@@ -449,7 +464,7 @@
                     </div>
                  </div>
               </div>
-     
+
               <!-- Single item -->
               <div class="carousel-item">
                  <div class="container">
@@ -465,7 +480,7 @@
                              </div>
                           </div>
                        </div>
-     
+
                        <div class="col-lg-4 d-none d-lg-block">
                           <div class="card">
                              <img src="assets/img/booking/hotel05.jpg" class="card-img-top" alt="..." />
@@ -477,7 +492,7 @@
                              </div>
                           </div>
                        </div>
-     
+
                        <div class="col-lg-4 d-none d-lg-block">
                           <div class="card">
                              <img src="assets/img/booking/hotel06.jpg" class="card-img-top" alt="..." />
@@ -492,7 +507,7 @@
                     </div>
                  </div>
               </div>
-     
+
               <!-- Single item -->
               <div class="carousel-item">
                  <div class="container">
@@ -510,7 +525,7 @@
                              </div>
                           </div>
                        </div>
-     
+
                        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
                           <div class="card">
                              <img
@@ -524,7 +539,7 @@
                              </div>
                           </div>
                        </div>
-     
+
                        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
                           <div class="card">
                              <img
@@ -556,7 +571,7 @@
                  <span class="visually-hidden">Next</span>
               </button>
            </div>
-        
+
         </div>
-        
+
     </div>

@@ -73,13 +73,12 @@
             <div class="w-100"></div>
             <div class="col-12 col-lg-8 col-xl-6">
                 <nav class="row gy-3 row-cols-auto align-items-center justify-content-center text-center py-3">
-                    <a href="reservationSelectForm.do" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견호텔</span></a>
-                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견유치원</span></a>
-                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견카페</span></a>
-                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견샵</span></a>
+                    <a href="shopList.do?sort=hotel" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견호텔</span></a>
+                    <a href="shopList.do?sort=school" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견유치원</span></a>
+                    <a href="shopList.do?sort=cafe" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견카페</span></a>
                     <a href="petShopList.do" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">애견용품샵</span></a>
-                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">산책/공원</span></a>
-                    <a href="#" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">동물병원</span></a>
+                    <a href="shopList.do?sort=park" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">산책/공원</span></a>
+                    <a href="shopList.do?sort=hospital" class="col"><img src="assets/img/category/hotel.png" width="40"><span class="d-block text-dark">동물병원</span></a>
                 </nav>
             </div>
         </div>

@@ -44,4 +44,22 @@ public class ShopItemServiceMapper implements ShopItemService {
 	public void closeSession(){
 		sqlSession.close();
 	}
+
+	@Override
+	public List<ShopItemVO> shopItemFoodList(String category) {
+		// TODO Auto-generated method stub
+		return mapper.shopItemFoodList(category);
+	}
+
+	@Override
+	public List<ShopItemVO> shopItemSnackList(String category) {
+		// TODO Auto-generated method stub
+		return mapper.shopItemSnackList(category);
+	}
+
+	@Override
+	public List<ShopItemVO> shopItemProductList(String category) {
+		// TODO Auto-generated method stub
+		return mapper.shopItemProductList(category);
+	}
 }

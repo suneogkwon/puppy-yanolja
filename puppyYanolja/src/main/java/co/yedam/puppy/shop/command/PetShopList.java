@@ -13,8 +13,15 @@ public class PetShopList implements Command {
 		// TODO Auto-generated method stub
 		ShopItemServiceMapper ItemDao = new ShopItemServiceMapper();
 		
-		int shopNo = 1;
-		request.setAttribute("list", ItemDao.shopItemList(shopNo));
+		int shopNo = 5;
+		request.setAttribute("list", ItemDao.shopItemList(shopNo)); // 전체리스트
+		
+		String food="사료";
+		String snack="간식";
+		String product="용품";
+		request.setAttribute("foodList", ItemDao.shopItemFoodList(food));
+		request.setAttribute("snackList", ItemDao.shopItemSnackList(snack));
+		request.setAttribute("productList", ItemDao.shopItemProductList(product));
 		
 		return "booking/petShopList";
 	}

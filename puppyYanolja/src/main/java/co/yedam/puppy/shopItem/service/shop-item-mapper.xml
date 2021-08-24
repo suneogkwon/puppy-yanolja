@@ -6,6 +6,17 @@
 	<select id="shopItemList" resultType="ShopItemVO">
 		SELECT * FROM shop_item where shop_no = #{shopNo}
 	</select>
+	
+	<!-- 카테고리 리스트 조회 -->
+	<select id="shopItemFoodList" resultType="ShopItemVO">
+		SELECT * FROM shop_item where it_category = #{itCategory}
+	</select>
+	<select id="shopItemSnackList" resultType="ShopItemVO">
+		SELECT * FROM shop_item where it_category = #{itCategory}
+	</select>
+	<select id="shopItemProductList" resultType="ShopItemVO">
+		SELECT * FROM shop_item where it_category = #{itCategory}
+	</select>
 
 	<!-- 상품 한건 조회 -->
 	<select id="shopItemSelect" parameterType="ShopItemVO"

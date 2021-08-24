@@ -45,6 +45,8 @@ public class FrontController extends HttpServlet {
 		map.put("/myPageUpdateForm.do", new MyPageUpdateForm());
 		map.put("/myPageUpdate.do", new MyPageUpdate());
 		map.put("/memberIdCheck.do", new MemberIdCheck());
+		map.put("/partnerShopAddForm.do", new PartnerShopAddForm());
+		map.put("/partnerShopInsert.do", new PartnerShopInsert());
 
 		// 게시판관련
 		map.put("/boardList.do", new BoardListCmd());
@@ -64,8 +66,8 @@ public class FrontController extends HttpServlet {
 		map.put("/QnaInsert.do", new QnaInsertCmd());
 
 		// 서비스관련 (공통)
-		map.put("/reservationList.do", null);
-		map.put("/reservationView.do", null);
+		map.put("/shopList.do", new shopList());
+		map.put("/shopView.do", new shopView());
 
 		// 서비스관련 (멤버)
 		map.put("/reservationForm.do", null);

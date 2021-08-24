@@ -17,7 +17,7 @@ public class ShopItemVO {
 	private String mainRealFile;
 	private String subFile;  // 상품 상세 이미지
 	private String subRealFile;
-	private int itManager;    // 관리자번호
+
 	
 	public ShopItemVO() {
 		// TODO Auto-generated constructor stub
@@ -135,13 +135,7 @@ public class ShopItemVO {
 		this.subRealFile = subRealFile;
 	}
 
-	public int getItManager() {
-		return itManager;
-	}
 
-	public void setItManager(int itManager) {
-		this.itManager = itManager;
-	}
 	
 	
 	
