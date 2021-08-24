@@ -164,7 +164,7 @@ ul.fit {
 
 			<div class="col-6 size">결제 금액</div>
 			<div class="col-6 text-end size">
-				<b>55,000원</b>
+				<b>156,000원</b>
 			</div>
 		</form>
 	</div>
@@ -180,29 +180,73 @@ ul.fit {
 					<div class="col-6">
 						<div class="form-check">
 							<input class="form-check-input" style="margin-top: 6px"
-								type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-								checked> <label class="form-check-label"
-								for="flexRadioDefault2"> <img
-								src="https://image6.yanolja.com/payment/tPcTwmhcSkNTjk4O"
-								alt="실시간계좌이체 아이콘" style="width: 40px;"> 계좌이체
+								type="radio" value="00" onchange="setDisplay()"
+								name="flexRadioDefault" id="flexRadioDefault1"  checked>
+							<label class="form-check-label" for="flexRadioDefault1">
+								<img src="https://image6.yanolja.com/payment/tPcTwmhcSkNTjk4O"
+								alt="실시간계좌이체 아이콘" style="width: 40px;"> 무통장입금
 							</label>
 						</div>
 					</div>
 					<div class="col-6">
 						<div class="form-check">
 							<input class="form-check-input" style="margin-top: 6px"
-								type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-								checked> <label class="form-check-label"
-								for="flexRadioDefault2"> <img
-								src="https://image6.yanolja.com/payment/SPAiBJQQVztxhFeq"
+								type="radio" name="flexRadioDefault" value="10"
+								onchange="setDisplay()" id="flexRadioDefault2">
+							<label class="form-check-label" for="flexRadioDefault2">
+								<img src="https://image6.yanolja.com/payment/SPAiBJQQVztxhFeq"
 								alt="카드 아이콘" style="width: 40px"> 신용카드
 							</label>
+						</div>
+					</div>
+
+					<div class="container p-3" style="margin-top: 20px;">
+						<div class="row g-3" id="divShow">
+							<table class="table table-bordered">
+								<tr>
+									<td>입금자명</td>
+									<td><input type="email" class="form-control"
+										id="exampleInputEmail1" aria-describedby="emailHelp"
+										style="width: 500px;"></td>
+								</tr>
+								<tr>
+									<td>입금은행</td>
+									<td><select class="form-select"
+										aria-label="Default select example" style="width: 500px">
+											<option selected>은행을 선택해주세요</option>
+											<option value="1">농협</option>
+											<option value="2">우리은행</option>
+											<option value="3">국민은행</option>
+											<option value="4">기업은행</option>
+											<option value="5">하나은행</option>
+											<option value="6">시티은행</option>
+											<option value="7">외환은행</option>
+											<option value="8">SC스탠다드차타드은행</option>
+											<option value="9">카카오뱅크</option>
+											<option value="10">대구은행</option>
+											<option value="11">부산은행</option>
+											<option value="12">경남은행</option>
+											<option value="13">전북은행</option>
+									</select></td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<script>
+	function setDisplay(){
+	    if($('input:radio[id=flexRadioDefault1]').is(':checked')){
+	        $('#divShow').show();
+	    }else{
+	        $('#divShow').hide();
+	    }
+	}
+	</script>
+
 
 	<div class="container p-3 my-3 border">
 		<div class="container p-3" style="background-color: #fef8f2;">
@@ -227,20 +271,18 @@ ul.fit {
 		</div>
 	</div>
 
-
-	<script>
-    if($("input:checkbox[id='defaultCheck1']").is(":checked") != true){
-        alert('약관동의에 체크해 주세요');
-        return;
-    }}
-</script>
-
-
+	<!-- 	<script>
+		if ($("#defaultCheck1").is(":checked") == true) {
+			$("#check_module").attr("disabled", false);
+		}
+	</script> -->
 	<div class="d-grid gap-2">
 
-		<button class="btn btn-primary" id="check_module" type="button"
-			style="color: white; height: 30pt;">원 결제하기</button>
+		<button class="btn btn-primary" id="check_module"
+			onclick="button1_click()" type="button"
+			style="color: white; height: 30pt;">156,000원 결제하기</button>
 	</div>
+
 
 	<script>
 		$("#check_module").click(function() {
@@ -268,10 +310,10 @@ ul.fit {
 				 'phone':휴대폰소액결제
 				 */
 				merchant_uid : 'merchant_' + new Date().getTime(),
-				
-				name : '주문명:결제테스트',
+
+				name : '주문명: 성남호텔',
 				//결제창에서 보여질 이름
-				amount : 1000,
+				amount : 156000,
 				//가격
 				buyer_email : 'iamport@siot.do',
 				buyer_name : '홍길동',
