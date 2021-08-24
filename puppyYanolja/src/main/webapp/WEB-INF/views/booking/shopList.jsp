@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<style>
+	.link-secondary{
+		color:#333;
+	}
+	.link-secondary:hover {
+		color: #d79b70;
+	}
+</style>
 
 <div class="container">
     <div class="my-5">

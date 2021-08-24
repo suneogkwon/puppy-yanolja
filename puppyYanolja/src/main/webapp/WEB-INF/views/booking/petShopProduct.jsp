@@ -3,11 +3,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <div class="container">
 	<br>
+	<form id="frm" name="frm" method="post" action="petShopPayForm.do">
 	<div>
 		<h6>
 			<b>상품번호 ${list.itNo }</b>
+			<input type="hidden" id="itNo" name="itNo" value="${list.itNo }">
 		</h6>
 	</div>
+	
 	<hr>
 	<!-- 상품이미지 & 구매 -->
 	<div class="row p-4">
@@ -79,12 +82,12 @@
 					<h6>수량</h6>
 				</div>
 				<div class="col-9">
-					<select>
-						<option>1개</option>
-						<option>2개</option>
-						<option>3개</option>
-						<option>4개</option>
-						<option>5개</option>
+					<select id="count" name="count">
+						<option value="1" selected>1개</option>
+						<option value="2">2개</option>
+						<option value="3">3개</option>
+						<option value="4">4개</option>
+						<option value="5">5개</option>
 					</select>
 				</div>
 			</div>
@@ -103,14 +106,14 @@
 				</div>
 				<div class="col-6">
 					<div class="d-grid gap-2">
-						<button class="btn btn-danger p-3" type="button" onclick="location.href='petShopPayForm.do'">구매하기</button>
+						<input class="btn btn-danger p-3" type="submit" value="구매하기">
 					</div>
 				</div>
 			</div>
 
-
 		</div>
 	</div>
+	</form>
 	<!--상품 상세페이지 & 후기-->
 	<br>
 	<div>

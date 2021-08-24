@@ -20,7 +20,6 @@ public class PetShopProduct implements Command {
 		request.setAttribute("list", ItemDao.shopItemSelect(vo));
 		
 		
-		
 		return "booking/petShopProduct";
 	}
 
